@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D083D0A206DFCC100EEEE6E /* p5hatty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D083D09206DFCC100EEEE6E /* p5hatty.ttf */; };
+		3D48650A206CBB1800BF1B95 /* PersonaFusionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D486509206CBB1800BF1B95 /* PersonaFusionViewController.swift */; };
+		3D59C05620661327002975FE /* MyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59C05520661327002975FE /* MyTableCell.swift */; };
 		3D830D3620657858005A5D2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D830D3520657858005A5D2E /* AppDelegate.swift */; };
-		3D830D3820657858005A5D2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D830D3720657858005A5D2E /* ViewController.swift */; };
+		3D830D3820657858005A5D2E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D830D3720657858005A5D2E /* TableViewController.swift */; };
 		3D830D3B20657859005A5D2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D830D3920657859005A5D2E /* Main.storyboard */; };
 		3D830D3D20657859005A5D2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D830D3C20657859005A5D2E /* Assets.xcassets */; };
 		3D830D4020657859005A5D2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D830D3E20657859005A5D2E /* LaunchScreen.storyboard */; };
 		3D830D4B2065785D005A5D2E /* Fusion_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D830D4A2065785C005A5D2E /* Fusion_CalculatorTests.swift */; };
 		3D830D562065785E005A5D2E /* Fusion_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D830D552065785E005A5D2E /* Fusion_CalculatorUITests.swift */; };
+		3D830D64206578EE005A5D2E /* personas.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D830D63206578EE005A5D2E /* personas.json */; };
+		3DB6A0F6206BD9030074FD98 /* PersonaStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6A0F5206BD9020074FD98 /* PersonaStatsViewController.swift */; };
+		3DB6A0F8206BD95A0074FD98 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6A0F7206BD95A0074FD98 /* MyPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D083D09206DFCC100EEEE6E /* p5hatty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = p5hatty.ttf; path = ../../../../Downloads/p5hatty.ttf; sourceTree = "<group>"; };
+		3D486509206CBB1800BF1B95 /* PersonaFusionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaFusionViewController.swift; sourceTree = "<group>"; };
+		3D59C05520661327002975FE /* MyTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableCell.swift; sourceTree = "<group>"; };
 		3D830D3220657858005A5D2E /* Fusion Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fusion Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D830D3520657858005A5D2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D830D3720657858005A5D2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D830D3720657858005A5D2E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		3D830D3A20657859005A5D2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D830D3C20657859005A5D2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D830D3F20657859005A5D2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +56,9 @@
 		3D830D512065785D005A5D2E /* Fusion CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fusion CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D830D552065785E005A5D2E /* Fusion_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fusion_CalculatorUITests.swift; sourceTree = "<group>"; };
 		3D830D572065785E005A5D2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D830D63206578EE005A5D2E /* personas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = personas.json; sourceTree = "<group>"; };
+		3DB6A0F5206BD9020074FD98 /* PersonaStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaStatsViewController.swift; sourceTree = "<group>"; };
+		3DB6A0F7206BD95A0074FD98 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D083D06206DFC1600EEEE6E /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3D083D09206DFCC100EEEE6E /* p5hatty.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		3D830D2920657856005A5D2E = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +117,18 @@
 		3D830D3420657858005A5D2E /* Fusion Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				3D083D06206DFC1600EEEE6E /* fonts */,
+				3D830D63206578EE005A5D2E /* personas.json */,
 				3D830D3520657858005A5D2E /* AppDelegate.swift */,
-				3D830D3720657858005A5D2E /* ViewController.swift */,
+				3D830D3720657858005A5D2E /* TableViewController.swift */,
 				3D830D3920657859005A5D2E /* Main.storyboard */,
 				3D830D3C20657859005A5D2E /* Assets.xcassets */,
 				3D830D3E20657859005A5D2E /* LaunchScreen.storyboard */,
 				3D830D412065785A005A5D2E /* Info.plist */,
+				3D59C05520661327002975FE /* MyTableCell.swift */,
+				3DB6A0F5206BD9020074FD98 /* PersonaStatsViewController.swift */,
+				3DB6A0F7206BD95A0074FD98 /* MyPageViewController.swift */,
+				3D486509206CBB1800BF1B95 /* PersonaFusionViewController.swift */,
 			);
 			path = "Fusion Calculator";
 			sourceTree = "<group>";
@@ -232,7 +258,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D830D64206578EE005A5D2E /* personas.json in Resources */,
 				3D830D4020657859005A5D2E /* LaunchScreen.storyboard in Resources */,
+				3D083D0A206DFCC100EEEE6E /* p5hatty.ttf in Resources */,
 				3D830D3D20657859005A5D2E /* Assets.xcassets in Resources */,
 				3D830D3B20657859005A5D2E /* Main.storyboard in Resources */,
 			);
@@ -259,8 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D830D3820657858005A5D2E /* ViewController.swift in Sources */,
+				3DB6A0F8206BD95A0074FD98 /* MyPageViewController.swift in Sources */,
+				3D830D3820657858005A5D2E /* TableViewController.swift in Sources */,
 				3D830D3620657858005A5D2E /* AppDelegate.swift in Sources */,
+				3D48650A206CBB1800BF1B95 /* PersonaFusionViewController.swift in Sources */,
+				3D59C05620661327002975FE /* MyTableCell.swift in Sources */,
+				3DB6A0F6206BD9030074FD98 /* PersonaStatsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
