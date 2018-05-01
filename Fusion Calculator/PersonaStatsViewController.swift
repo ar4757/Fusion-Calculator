@@ -8,7 +8,343 @@
 
 import UIKit
 
+import PopupDialog
+
+struct Skill: Decodable {
+    let effect: String?
+    let cost: String?
+    let card: String?
+    let users: String?
+}
+
+struct AllSkills: Decodable {
+    let PhysicalSkills: PhysicalSkills
+    let MagicSkills: MagicSkills
+    let HealAssistSkills: HealAssistSkills
+    let PassiveSkills: PassiveSkills
+}
+
+struct PhysicalSkills: Decodable {
+    let Phys: Phys
+    let Gun: [String: Skill]
+}
+
+struct Phys: Decodable {
+    let SingleTarget: [String: Skill]
+    let MultiTarget: [String: Skill]
+}
+
+struct MagicSkills: Decodable {
+    let Fire: [String: Skill]
+    let Ice: [String: Skill]
+    let Electric: [String: Skill]
+    let Wind: [String: Skill]
+    let Psychokinesis: [String: Skill]
+    let Nuclear: [String: Skill]
+    let Bless: [String: Skill]
+    let Curse: [String: Skill]
+    let Almighty: [String: Skill]
+    let Ailment: Ailment
+}
+
+struct Ailment: Decodable {
+    let Physiological: [String: Skill]
+    let Mental: [String: Skill]
+}
+
+struct HealAssistSkills: Decodable {
+    let Healing: [String: Skill]
+    let Support: Support
+}
+
+struct Support: Decodable {
+    let Negatable: [String: Skill]
+    let NonNegatable: [String: Skill]
+    let Shields: [String: Skill]
+    let Negation: [String: Skill]
+}
+
+struct PassiveSkills: Decodable {
+    let Counter: [String: Skill]
+    let Offensive: [String: Skill]
+    let Defensive: [String: Skill]
+    let Evasion: [String: Skill]
+    let Recovery: [String: Skill]
+    let OncePerBattle: [String: Skill]
+    let PostBattleEffect: [String: Skill]
+}
+
 class PersonaStatsViewController: UIViewController {
+    
+    @IBAction func showSkillDetails(recognizer:UITapGestureRecognizer) {
+        let skillLabel = recognizer.view as! UILabel
+        let skillName = skillLabel.text
+        
+        if (skillName == nil) {
+            return
+        }
+        
+        var effect: String?
+        var cost: String?
+        var card: String?
+        var image: UIImage?
+        
+        skillsList.PhysicalSkills.Phys.SingleTarget.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Melee_Icon_P5")
+            }
+        }
+        skillsList.PhysicalSkills.Phys.MultiTarget.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Melee_Icon_P5")
+            }
+        }
+        skillsList.PhysicalSkills.Gun.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Ranged_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Fire.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Fire_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Ice.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Ice_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Electric.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Elec_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Wind.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Wind_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Psychokinesis.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Psy_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Nuclear.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Nuclear_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Bless.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Light_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Curse.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Dark_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Almighty.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Almighty_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Ailment.Physiological.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Ailment_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Ailment.Mental.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Ailment_Icon_P5")
+            }
+        }
+        skillsList.HealAssistSkills.Healing.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Healing_Icon_P5")
+            }
+        }
+        skillsList.HealAssistSkills.Support.Negatable.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Assist_Icon_P5")
+            }
+        }
+        skillsList.HealAssistSkills.Support.NonNegatable.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Assist_Icon_P5")
+            }
+        }
+        skillsList.HealAssistSkills.Support.Shields.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Assist_Icon_P5")
+            }
+        }
+        skillsList.HealAssistSkills.Support.Negation.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Assist_Icon_P5")
+            }
+        }
+        skillsList.PassiveSkills.Counter.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Nav_Skill_Icon_P5")
+            }
+        }
+        skillsList.PassiveSkills.Offensive.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Nav_Skill_Icon_P5")
+            }
+        }
+        skillsList.PassiveSkills.Defensive.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Nav_Skill_Icon_P5")
+            }
+        }
+        skillsList.PassiveSkills.Evasion.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Nav_Skill_Icon_P5")
+            }
+        }
+        skillsList.PassiveSkills.Recovery.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Nav_Skill_Icon_P5")
+            }
+        }
+        skillsList.PassiveSkills.OncePerBattle.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Nav_Skill_Icon_P5")
+            }
+        }
+        skillsList.PassiveSkills.PostBattleEffect.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName!)) {
+                effect = currentSkill.value.effect
+                cost = currentSkill.value.cost
+                card = currentSkill.value.card
+                image = UIImage.init(named: "Nav_Skill_Icon_P5")
+            }
+        }
+        
+        let title = skillName
+        if (cost == nil) {
+            cost = "None"
+        }
+        if (card == nil) {
+            card = "Unobtainable"
+        }
+        //let message = "Effect: \(effect!)\nCost: \(cost!)\nCard: \(card!)"
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SkillDetails") as! SkillDetailsViewController
+
+        let popup = PopupDialog(viewController: vc)
+        let buttonOne = CancelButton(title: "Cancel") {
+            print("Cancel was hit")
+        }
+        popup.addButton(buttonOne)
+        
+        /*let dialogAppearance = PopupDialogDefaultView.appearance()
+        dialogAppearance.backgroundColor = UIColor.red
+        dialogAppearance.titleFont = UIFont.init(name: "p5hatty", size: 24)!
+        dialogAppearance.titleColor = UIColor.white
+        dialogAppearance.messageFont = UIFont.init(name: "p5hatty", size: 18)!
+        dialogAppearance.messageColor = UIColor.white
+        
+        let containerAppearance = PopupDialogContainerView.appearance()
+        containerAppearance.cornerRadius = 0
+        
+        let overlayAppearance = PopupDialogOverlayView.appearance()
+        overlayAppearance.blurEnabled = false
+        overlayAppearance.opacity = 0
+        */
+        let buttonAppearance = CancelButton.appearance()
+        buttonAppearance.titleColor = UIColor.black
+        buttonAppearance.buttonColor = UIColor.white
+        buttonAppearance.separatorColor = UIColor.black
+
+        vc.titleLabel.text = title
+        if (cost == "None") {
+            vc.costLabel.isHidden = true
+        }
+        else {
+            vc.costLabel.text = cost
+        }
+        vc.effectLabel.text = effect
+        vc.imageView.image = image
+        self.present(popup, animated: true, completion: nil)
+        return
+    }
     
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -99,18 +435,7 @@ class PersonaStatsViewController: UIViewController {
     
     let steel = UIColor.init(red: 121.0/255.0, green: 121.0/255.0, blue: 121.0/255.0, alpha: 1.0) //"Steel"
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    var skillsList: AllSkills!
     
     var pageNumber: Int!
     var persona: Persona?
@@ -119,14 +444,29 @@ class PersonaStatsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        skillsList = loadSkillsList()
+        
         personaImage.image = UIImage.init(named: name!)
         
         nameLabel.text = name
         
         let strokeTextAttributes: [NSAttributedStringKey : Any] =
             [NSAttributedStringKey.strokeColor : UIColor.white, NSAttributedStringKey.foregroundColor : UIColor.black, NSAttributedStringKey.strokeWidth : -4.0,]
-        arcanaLabel.attributedText = NSAttributedString(string: persona!.arcana, attributes: strokeTextAttributes)
-        
+        if (persona!.arcana == "Hierophant") {
+            arcanaLabel.attributedText = NSAttributedString(string: "Hiero.", attributes: strokeTextAttributes)
+        }
+        else if (persona!.arcana == "Hanged Man") {
+            arcanaLabel.attributedText = NSAttributedString(string: "Hanged", attributes: strokeTextAttributes)
+        }
+        else if (persona!.arcana == "Temperance") {
+            arcanaLabel.attributedText = NSAttributedString(string: "Temper.", attributes: strokeTextAttributes)
+        }
+        else if (persona!.arcana == "Judgement") {
+            arcanaLabel.attributedText = NSAttributedString(string: "Judge.", attributes: strokeTextAttributes)
+        }
+        else {
+            arcanaLabel.attributedText = NSAttributedString(string: persona!.arcana, attributes: strokeTextAttributes)
+        }
         levelLabel.text = "\(persona!.level)"
         
         populateElems(physicalLabel, persona!.elems[0])
@@ -197,7 +537,7 @@ class PersonaStatsViewController: UIViewController {
         enWhite.frame.size.width = (CGFloat(Float(self.enLabel.text!)!) * 130/99 + 6.25)
         agWhite.frame.size.width = (CGFloat(Float(self.agLabel.text!)!) * 130/99 + 6.25)
         luWhite.frame.size.width = (CGFloat(Float(self.luLabel.text!)!) * 130/99 + 6.25)
-
+    
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -408,11 +748,162 @@ class PersonaStatsViewController: UIViewController {
     }
     
     func populateSkills(_ image: UIImageView, _ skill: UILabel, _ level: UILabel, _ levelnum: UILabel, _ skillName: String, _ skillLevel: Int) {
-        image.image = UIImage.init(named: "Ailment_Icon_P5")
+        
+        skillsList.PhysicalSkills.Phys.SingleTarget.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Melee_Icon_P5")
+            }
+        }
+        skillsList.PhysicalSkills.Phys.MultiTarget.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Melee_Icon_P5")
+            }
+        }
+        skillsList.PhysicalSkills.Gun.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Ranged_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Fire.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Fire_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Ice.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Ice_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Electric.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Elec_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Wind.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Wind_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Psychokinesis.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Psy_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Nuclear.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Nuclear_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Bless.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Light_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Curse.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Dark_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Almighty.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Almighty_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Ailment.Physiological.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Ailment_Icon_P5")
+            }
+        }
+        skillsList.MagicSkills.Ailment.Mental.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Ailment_Icon_P5")
+            }
+        }
+        skillsList.HealAssistSkills.Healing.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Healing_Icon_P5")
+            }
+        }
+        skillsList.HealAssistSkills.Support.Negatable.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Assist_Icon_P5")
+            }
+        }
+        skillsList.HealAssistSkills.Support.NonNegatable.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Assist_Icon_P5")
+            }
+        }
+        skillsList.HealAssistSkills.Support.Shields.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Assist_Icon_P5")
+            }
+        }
+        skillsList.HealAssistSkills.Support.Negation.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Assist_Icon_P5")
+            }
+        }
+        skillsList.PassiveSkills.Counter.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Nav_Skill_Icon_P5")
+            }
+        }
+        skillsList.PassiveSkills.Offensive.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Nav_Skill_Icon_P5")
+            }
+        }
+        skillsList.PassiveSkills.Defensive.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Nav_Skill_Icon_P5")
+            }
+        }
+        skillsList.PassiveSkills.Evasion.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Nav_Skill_Icon_P5")
+            }
+        }
+        skillsList.PassiveSkills.Recovery.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Nav_Skill_Icon_P5")
+            }
+        }
+        skillsList.PassiveSkills.OncePerBattle.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Nav_Skill_Icon_P5")
+            }
+        }
+        skillsList.PassiveSkills.PostBattleEffect.forEach { (currentSkill) in
+            if (currentSkill.key.elementsEqual(skillName)) {
+                image.image = UIImage.init(named: "Nav_Skill_Icon_P5")
+            }
+        }
+        
         skill.text = skillName
         if (skillLevel != 0) {
             level.text = "LV"
             levelnum.text = "\(skillLevel)"
         }
+        skill.isUserInteractionEnabled = true
+    }
+    
+    func loadSkillsList() -> AllSkills {
+        let path = Bundle.main.path(forResource: "skills", ofType: "json")
+        let url = URL(fileURLWithPath: path!)
+        var result: AllSkills?
+        do {
+            let data = try Data(contentsOf: url)
+            
+            result = try JSONDecoder().decode(AllSkills.self, from: data)
+            
+        }
+        catch {
+            print("Error loading json, rip")
+            print(error)
+            result = nil
+        }
+        
+        return result!
     }
 }

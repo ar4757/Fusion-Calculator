@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D01A76F209522650095C888 /* skills.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D01A76E209522640095C888 /* skills.json */; };
 		3D083D0A206DFCC100EEEE6E /* p5hatty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D083D09206DFCC100EEEE6E /* p5hatty.ttf */; };
 		3D48650A206CBB1800BF1B95 /* PersonaFusionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D486509206CBB1800BF1B95 /* PersonaFusionViewController.swift */; };
+		3D5664A52095AAD40010A3DE /* SkillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5664A42095AAD40010A3DE /* SkillDetailsViewController.swift */; };
 		3D59C05620661327002975FE /* MyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59C05520661327002975FE /* MyTableCell.swift */; };
 		3D830D3620657858005A5D2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D830D3520657858005A5D2E /* AppDelegate.swift */; };
 		3D830D3820657858005A5D2E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D830D3720657858005A5D2E /* TableViewController.swift */; };
@@ -20,6 +22,9 @@
 		3D830D64206578EE005A5D2E /* personas.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D830D63206578EE005A5D2E /* personas.json */; };
 		3DB6A0F6206BD9030074FD98 /* PersonaStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6A0F5206BD9020074FD98 /* PersonaStatsViewController.swift */; };
 		3DB6A0F8206BD95A0074FD98 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6A0F7206BD95A0074FD98 /* MyPageViewController.swift */; };
+		3DF7E8B420968D2A00E75635 /* Fusion Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7E8B320968D2A00E75635 /* Fusion Methods.swift */; };
+		3DF7E8B620969DA600E75635 /* ComboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7E8B520969DA600E75635 /* ComboCell.swift */; };
+		9903D0ED90FA955C1A30A0F2 /* Pods_Fusion_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B029368599930FB9E0892B43 /* Pods_Fusion_Calculator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D01A76E209522640095C888 /* skills.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = skills.json; sourceTree = "<group>"; };
 		3D083D09206DFCC100EEEE6E /* p5hatty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = p5hatty.ttf; path = ../../../../Downloads/p5hatty.ttf; sourceTree = "<group>"; };
 		3D486509206CBB1800BF1B95 /* PersonaFusionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaFusionViewController.swift; sourceTree = "<group>"; };
+		3D5664A42095AAD40010A3DE /* SkillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillDetailsViewController.swift; sourceTree = "<group>"; };
 		3D59C05520661327002975FE /* MyTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableCell.swift; sourceTree = "<group>"; };
 		3D830D3220657858005A5D2E /* Fusion Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fusion Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D830D3520657858005A5D2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +66,11 @@
 		3D830D63206578EE005A5D2E /* personas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = personas.json; sourceTree = "<group>"; };
 		3DB6A0F5206BD9020074FD98 /* PersonaStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaStatsViewController.swift; sourceTree = "<group>"; };
 		3DB6A0F7206BD95A0074FD98 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		3DF7E8B320968D2A00E75635 /* Fusion Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fusion Methods.swift"; sourceTree = "<group>"; };
+		3DF7E8B520969DA600E75635 /* ComboCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComboCell.swift; sourceTree = "<group>"; };
+		B029368599930FB9E0892B43 /* Pods_Fusion_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fusion_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8CF290468957010F3E77190 /* Pods-Fusion Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fusion Calculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fusion Calculator/Pods-Fusion Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		CC01A5636352C941AA951C02 /* Pods-Fusion Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fusion Calculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fusion Calculator/Pods-Fusion Calculator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9903D0ED90FA955C1A30A0F2 /* Pods_Fusion_Calculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +114,8 @@
 				3D830D492065785C005A5D2E /* Fusion CalculatorTests */,
 				3D830D542065785E005A5D2E /* Fusion CalculatorUITests */,
 				3D830D3320657858005A5D2E /* Products */,
+				643380B77BC4CC8B9B224790 /* Pods */,
+				B53E39BDEC6D92008A78C24C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +134,7 @@
 			children = (
 				3D083D06206DFC1600EEEE6E /* fonts */,
 				3D830D63206578EE005A5D2E /* personas.json */,
+				3D01A76E209522640095C888 /* skills.json */,
 				3D830D3520657858005A5D2E /* AppDelegate.swift */,
 				3D830D3720657858005A5D2E /* TableViewController.swift */,
 				3D830D3920657859005A5D2E /* Main.storyboard */,
@@ -129,6 +145,9 @@
 				3DB6A0F5206BD9020074FD98 /* PersonaStatsViewController.swift */,
 				3DB6A0F7206BD95A0074FD98 /* MyPageViewController.swift */,
 				3D486509206CBB1800BF1B95 /* PersonaFusionViewController.swift */,
+				3D5664A42095AAD40010A3DE /* SkillDetailsViewController.swift */,
+				3DF7E8B320968D2A00E75635 /* Fusion Methods.swift */,
+				3DF7E8B520969DA600E75635 /* ComboCell.swift */,
 			);
 			path = "Fusion Calculator";
 			sourceTree = "<group>";
@@ -151,6 +170,23 @@
 			path = "Fusion CalculatorUITests";
 			sourceTree = "<group>";
 		};
+		643380B77BC4CC8B9B224790 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8CF290468957010F3E77190 /* Pods-Fusion Calculator.debug.xcconfig */,
+				CC01A5636352C941AA951C02 /* Pods-Fusion Calculator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B53E39BDEC6D92008A78C24C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B029368599930FB9E0892B43 /* Pods_Fusion_Calculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D830D5A2065785E005A5D2E /* Build configuration list for PBXNativeTarget "Fusion Calculator" */;
 			buildPhases = (
+				B2729C82B76932C35716DB36 /* [CP] Check Pods Manifest.lock */,
 				3D830D2E20657858005A5D2E /* Sources */,
 				3D830D2F20657858005A5D2E /* Frameworks */,
 				3D830D3020657858005A5D2E /* Resources */,
+				719E69D5790F6CD6C32EC4E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +299,7 @@
 				3D830D64206578EE005A5D2E /* personas.json in Resources */,
 				3D830D4020657859005A5D2E /* LaunchScreen.storyboard in Resources */,
 				3D083D0A206DFCC100EEEE6E /* p5hatty.ttf in Resources */,
+				3D01A76F209522650095C888 /* skills.json in Resources */,
 				3D830D3D20657859005A5D2E /* Assets.xcassets in Resources */,
 				3D830D3B20657859005A5D2E /* Main.storyboard in Resources */,
 			);
@@ -282,6 +321,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		719E69D5790F6CD6C32EC4E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Fusion Calculator/Pods-Fusion Calculator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fusion Calculator/Pods-Fusion Calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2729C82B76932C35716DB36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fusion Calculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3D830D2E20657858005A5D2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -290,8 +370,11 @@
 				3DB6A0F8206BD95A0074FD98 /* MyPageViewController.swift in Sources */,
 				3D830D3820657858005A5D2E /* TableViewController.swift in Sources */,
 				3D830D3620657858005A5D2E /* AppDelegate.swift in Sources */,
+				3DF7E8B420968D2A00E75635 /* Fusion Methods.swift in Sources */,
 				3D48650A206CBB1800BF1B95 /* PersonaFusionViewController.swift in Sources */,
 				3D59C05620661327002975FE /* MyTableCell.swift in Sources */,
+				3DF7E8B620969DA600E75635 /* ComboCell.swift in Sources */,
+				3D5664A52095AAD40010A3DE /* SkillDetailsViewController.swift in Sources */,
 				3DB6A0F6206BD9030074FD98 /* PersonaStatsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +539,7 @@
 		};
 		3D830D5B2065785E005A5D2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8CF290468957010F3E77190 /* Pods-Fusion Calculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +555,7 @@
 		};
 		3D830D5C2065785E005A5D2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC01A5636352C941AA951C02 /* Pods-Fusion Calculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

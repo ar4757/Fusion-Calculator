@@ -14,6 +14,7 @@ class MyPageViewController: UIPageViewController {
     var receivedPersona: Persona?
     var receivedName: String?
     
+    @IBOutlet weak var fusionSortButton: UIBarButtonItem!
     
     private(set) lazy var orderedViewControllers: [UIViewController] = {
         return [self.createPersonaStatsViewController(pageNumber: 0, persona: receivedPersona!, name: receivedName!), self.createPersonaFusionViewController( pageNumber: 1, persona: receivedPersona!, name: receivedName!)]
@@ -35,7 +36,24 @@ class MyPageViewController: UIPageViewController {
                                animated: true,
                                completion: nil)
             self.title = "Stats"
+            self.fusionSortButton.isEnabled = false
         }
+        
+        DispatchQueue.global().async {
+            let combos = getRecipes(name: self.receivedName!, persona: self.receivedPersona!)
+            (self.orderedViewControllers[1] as! PersonaFusionViewController).combos = combos
+            while ((self.orderedViewControllers[1] as! PersonaFusionViewController).isViewLoaded == false) {
+                if ((self.orderedViewControllers[1] as! PersonaFusionViewController).isViewLoaded == true) {
+                    break
+                }
+            }
+            DispatchQueue.main.async {
+                (self.orderedViewControllers[1] as! PersonaFusionViewController).tableView.reloadData()
+                (self.orderedViewControllers[1] as! PersonaFusionViewController).activityIndicatorView.stopAnimating()
+                (self.orderedViewControllers[1] as! PersonaFusionViewController).loadingView.isHidden = true
+            }
+        }
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -66,6 +84,8 @@ class MyPageViewController: UIPageViewController {
         contentViewController.pageNumber = pageNumber
         contentViewController.persona = persona
         contentViewController.name = name
+        fusionSortButton.action = #selector(contentViewController.fusionToggleSort)
+        fusionSortButton.target = contentViewController;
         return contentViewController
     }
 }
@@ -134,9 +154,11 @@ extension MyPageViewController: UIPageViewControllerDelegate {
         if completed {
             if (currentIndex == 0) {
                 self.title = "Stats"
+                self.fusionSortButton.isEnabled = false
             }
             else if (currentIndex == 1) {
                 self.title = "Fusion"
+                self.fusionSortButton.isEnabled = true
             }
         }
     }

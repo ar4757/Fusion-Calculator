@@ -5,7 +5,7 @@
         "stats": [51, 38, 58, 43, 39],
         "elems": ["Dr", "Dr", "-", "-", "-", "-", "Wk", "Wk", "-", "Dr"],
         "skills": {
-            "Absorb Phys": 79,
+            "Drain Phys": 79,
             "Deathbound": 0,
             "Gigantomachia": 80,
             "Makarakarn": 0,
@@ -265,7 +265,7 @@
         "stats": [56, 50, 48, 51, 48],
         "elems": ["-", "-", "Nul", "-", "-", "Rpl", "-", "-", "-", "Wk"],
         "skills": {
-            "Absorb Curse": 86,
+            "Drain Curse": 86,
             "Enduring Soul": 84,
             "Blazing Hell": 88,
             "Maragidyne": 0,
@@ -326,7 +326,7 @@
         "elems": ["-", "-", "Dr", "-", "-", "-", "-", "-", "Wk", "Rpl"],
         "skills": {
             "Curse Amp": 85,
-            "Devil Smile": 0,
+            "Evil Smile": 0,
             "Demonic Decree": 87,
             "Maeigaon": 0,
             "Mamudoon": 0,
@@ -505,7 +505,7 @@
         "stats": [54, 56, 53, 52, 50],
         "elems": ["Str", "Str", "-", "-", "-", "-", "Nul", "Wk", "-", "-"],
         "skills": {
-            "Absorb Psy": 90,
+            "Drain Psy": 90,
             "Gigantomachia": 0,
             "Concentrate": 92,
             "Psycho Blast": 89,
@@ -542,8 +542,8 @@
             "Energy Shower": 30,
             "Invigorate 1": 32,
             "Mahama": 0,
-            "Makajam": 0,
-            "Makajamon": 29,
+            "Makajama": 0,
+            "Makajamaon": 29,
             "Me Patra": 0,
             "Tetraja": 27
         }
@@ -586,7 +586,7 @@
         "stats": [44, 48, 45, 51, 38],
         "elems": ["-", "-", "Str", "-", "Wk", "-", "-", "-", "Nul", "-"],
         "skills": {
-            "Absorb Bless": 77,
+            "Drain Bless": 77,
             "Auto-Maraku": 76,
             "Bless Amp": 74,
             "Makougaon": 0,
@@ -634,7 +634,7 @@
         "elems": ["Wk", "-", "Rpl", "-", "-", "-", "-", "Str", "-", "Str"],
         "skills": {
             "Agilao": 0,
-            "Devil Smile": 37,
+            "Evil Smile": 37,
             "Fire Boost": 35,
             "Maragion": 33,
             "Null Fire": 36,
@@ -1004,7 +1004,7 @@
         "stats": [48, 59, 49, 58, 48],
         "elems": ["-", "-", "-", "-", "Nul", "Wk", "-", "-", "-", "-"],
         "skills": {
-            "Absorb Wind": 0,
+            "Drain Wind": 0,
             "Insta-Heal": 87,
             "Maziodyne": 88,
             "Mediarahan": 0,
@@ -1147,8 +1147,8 @@
         "elems": ["-", "Nul", "-", "-", "-", "-", "Nul", "Wk", "-", "-"],
         "skills": {
             "Forget Boost": 37,
-            "Makajam": 0,
-            "Makajamon": 39,
+            "Makajama": 0,
+            "Makajamaon": 39,
             "Mapsio": 40,
             "Marakunda": 41,
             "Psio": 0,
@@ -1162,7 +1162,7 @@
         "stats": [53, 45, 46, 53, 41],
         "elems": ["-", "-", "Nul", "-", "-", "-", "Rpl", "-", "-", "Str"],
         "skills": {
-            "Absorb Nuke": 82,
+            "Drain Nuke": 82,
             "Evade Ice": 79,
             "High Counter": 80,
             "Mapsiodyne": 81,
@@ -1282,7 +1282,7 @@
         "level": 9,
         "stats": [5, 8, 6, 9, 6],
         "elems": ["-", "Str", "Wk", "Str", "-", "Str", "-", "-", "-", "-"],
-        "skills": { "Bufu": 0, "Dodge Ice": 11, "Fire Wall": 13, "Mabufu": 14, "Makajam": 0, "Rakunda": 12 },
+        "skills": { "Bufu": 0, "Dodge Ice": 11, "Fire Wall": 13, "Mabufu": 14, "Makajama": 0, "Rakunda": 12 },
         "personality": "Timid"
     },
     "Koumokuten": {
@@ -1347,7 +1347,7 @@
             "Bufu": 0,
             "Forget Boost": 18,
             "Garu": 0,
-            "Makajam": 0,
+            "Makajama": 0,
             "Media": 0,
             "Regenerate 1": 15,
             "Wind Wall": 16
@@ -1423,7 +1423,7 @@
         "elems": ["-", "Wk", "-", "Str", "-", "Wk", "-", "-", "Wk", "Nul"],
         "skills": {
             "Bufula": 0,
-            "Devil Smile": 0,
+            "Evil Smile": 0,
             "Dodge Bless": 35,
             "Freeze Boost": 34,
             "Mabufula": 37,
@@ -1453,7 +1453,7 @@
         "stats": [61, 59, 59, 56, 51],
         "elems": ["-", "-", "-", "-", "-", "-", "-", "-", "Wk", "-"],
         "skills": {
-            "Absorb Phys": 99,
+            "Drain Phys": 99,
             "Gigantomachia": 0,
             "Heat Riser": 96,
             "Fortified Moxy": 97,
@@ -1525,7 +1525,7 @@
             "Energy Drop": 0,
             "Frei": 0,
             "Mafrei": 17,
-            "Makajam": 18,
+            "Makajama": 18,
             "Resist Despair": 19
         },
         "personality": "Upbeat"
@@ -1581,7 +1581,7 @@
         "stats": [50, 50, 50, 50, 50],
         "elems": ["-", "-", "Str", "Str", "Str", "Str", "Str", "Str", "Rpl", "Wk"],
         "skills": {
-            "Absorb Phys": 85,
+            "Drain Phys": 85,
             "Almighty Boost": 87,
             "Enduring Soul": 83,
             "God's Hand": 0,
@@ -1695,9 +1695,9 @@
         "stats": [32, 45, 42, 31, 37],
         "elems": ["-", "-", "Rpl", "Wk", "Str", "Str", "Dr", "-", "-", "Nul"],
         "skills": {
-            "Absorb Fire": 64,
+            "Drain Fire": 64,
             "Agidyne": 62,
-            "Devil Smile": 0,
+            "Evil Smile": 0,
             "Ghastly Wail": 63,
             "Nuke Amp": 65,
             "Psiodyne": 0,
@@ -1741,7 +1741,7 @@
         "elems": ["-", "Wk", "-", "-", "Nul", "-", "Str", "-", "-", "-"],
         "skills": {
             "Ambient Aid": 36,
-            "Makajamon": 37,
+            "Makajamaon": 37,
             "Mazionga": 0,
             "Shock Boost": 0,
             "Skull Cracker": 0,
@@ -1931,7 +1931,7 @@
             "Agneyastra": 81,
             "Arms Master": 77,
             "Firm Stance": 79,
-            "Makajamon": 0,
+            "Makajamaon": 0,
             "Pressing Stance": 0,
             "Myriad Slashes": 0,
             "Regenerate 3": 78
@@ -1977,7 +1977,7 @@
         "level": 17,
         "stats": [11, 14, 15, 12, 6],
         "elems": ["-", "-", "-", "-", "-", "Str", "-", "-", "Wk", "Str"],
-        "skills": { "Dekaja": 0, "Fire Break": 20, "Makajamon": 21, "Maragi": 0, "Marakunda": 19, "Sukukaja": 0 },
+        "skills": { "Dekaja": 0, "Fire Break": 20, "Makajamaon": 21, "Maragi": 0, "Marakunda": 19, "Sukukaja": 0 },
         "personality": "Timid"
     },
     "Orpheus": {
@@ -2067,7 +2067,7 @@
         "skills": {
             "Bad Beat": 47,
             "Ambient Aid": 45,
-            "Devil Smile": 46,
+            "Evil Smile": 46,
             "Eigaon": 48,
             "Maeiga": 0,
             "Mudoon": 0,
@@ -2119,14 +2119,14 @@
         "level": 29,
         "stats": [17, 19, 18, 21, 19],
         "elems": ["-", "-", "Str", "-", "-", "-", "-", "-", "Nul", "Wk"],
-        "skills": { "Bless Boost": 34, "Mabaisudi": 32, "Makajamon": 0, "Makouga": 0, "Mediarama": 31, "Tetraja": 0 }
+        "skills": { "Bless Boost": 34, "Mabaisudi": 32, "Makajamaon": 0, "Makouga": 0, "Mediarama": 31, "Tetraja": 0 }
     },
     "Queen Mab": {
         "arcana": "Magician",
         "level": 43,
         "stats": [23, 35, 26, 30, 22],
         "elems": ["-", "-", "Nul", "-", "Str", "Wk", "-", "-", "-", "-"],
-        "skills": { "Agidyne": 48, "Makajamon": 0, "Makara Break": 46, "Matarunda": 44, "Mazionga": 0, "Wind Wall": 0 },
+        "skills": { "Agidyne": 48, "Makajamaon": 0, "Makara Break": 46, "Matarunda": 44, "Mazionga": 0, "Wind Wall": 0 },
         "personality": "Unknown"
     },
     "Quetzalcoatl": {
@@ -2289,7 +2289,7 @@
         "stats": [62, 59, 55, 52, 55],
         "elems": ["-", "Str", "-", "Rpl", "-", "-", "-", "-", "-", "Rpl"],
         "skills": {
-            "Absorb Ice": 98,
+            "Drain Ice": 98,
             "Black Viper": 94,
             "Diamond Dust": 0,
             "Ice Age": 0,
@@ -2704,7 +2704,7 @@
         "stats": [38, 32, 33, 37, 17],
         "elems": ["Str", "-", "-", "-", "-", "-", "-", "Wk", "Str", "Rpl"],
         "skills": {
-            "Absorb Curse": 0,
+            "Drain Curse": 0,
             "Arms Master": 56,
             "Life Drain": 0,
             "Curse Amp": 53,
@@ -2720,7 +2720,7 @@
         "stats": [41, 35, 36, 40, 20],
         "elems": ["Str", "-", "-", "-", "-", "-", "-", "Wk", "Str", "Rpl"],
         "skills": {
-            "Absorb Curse": 0,
+            "Drain Curse": 0,
             "Curse Amp": 58,
             "Abyssal Wings": 0,
             "Myriad Slashes": 0,

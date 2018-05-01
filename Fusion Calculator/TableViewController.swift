@@ -32,13 +32,12 @@ struct Persona: Decodable {
     let note: String?
 }
 
+var myStructDictionary: [String: Persona] = [:]
+
 class TableViewController: UITableViewController {
     
     
     @IBOutlet weak var sortButton: UIBarButtonItem!
-    
-    
-    var myStructDictionary: [String: Persona] = [:]
     
     var sorted = false
     

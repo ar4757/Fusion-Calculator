@@ -1,0 +1,1570 @@
+{
+	"PhysicalSkills": {
+		"Phys": {
+			"SingleTarget": {
+				"Lunge": {
+					"effect": "Light Physical damage to 1 foe.",
+					"cost": "5% HP",
+					"card": "Bicorn (talk)"
+				},
+				"Cleave": {
+					"effect": "Light Physical damage to 1 foe.",
+					"cost": "6% HP",
+					"card": "Berith (both)"
+				},
+				"Giant Slice": {
+					"effect": "Medium Physical damage to 1 foe.",
+					"cost": "9% HP",
+					"card": "Valkyrie (itemize)"
+				},
+				"Assault Dive": {
+					"effect": "Heavy Physical damage to 1 foe.",
+					"cost": "13% HP",
+					"card": "Take-Minakata (talk)"
+				},
+				"Megaton Raid": {
+					"effect": "Severe Physical damage to 1 foe.",
+					"cost": "16% HP",
+					"card": "Cerberus (talk)"
+				},
+				"Sword Dance": {
+					"effect": "Colossal Physical damage to 1 foe.",
+					"cost": "21% HP"
+					},
+				"Brave Blade": {
+					"effect": "Colossal Physical damage to 1 foe.",
+					"cost": "24% HP",
+					"card": "Futsunushi (itemize)"
+				},
+				"God's Hand": {
+					"effect": "Colossal Physical damage to 1 foe.",
+					"cost": "25% HP",
+					"card": "Zaou-Gongen (itemize)"
+				},
+				"Double Fangs": {
+					"effect": "Medium Physical damage to 1 foe 2x.",
+					"cost": "10% HP",
+					"card": "Orthrus (talk)"
+				},
+				"Ayamur": {
+					"effect": "Medium Physical damage to 1 foe 3x. High critical rate. Unique to Baal.",
+					"cost": "25% HP"
+					},
+				"Myriad Slashes": {
+					"effect": "Medium Physical damage to 1 foe 2x to 3x.",
+					"cost": "20% HP",
+					"card": "Ongyo-Ki (itemize)"
+				},
+
+				"Tempest Slash": {
+					"effect": "Minuscule Physical damage to 1 foe 3x to 5x.",
+					"cost": "17% HP",
+					"card": "Hanuman (talk)"
+				},
+				"Dream Needle": {
+					"effect": "Medium Physical damage and inflict Sleep (medium odds) to 1 foe.",
+					"cost": "8% HP",
+					"card": "Incubus (itemize)"
+				},
+				"Terror Claw": {
+					"effect": "Medium Physical damage and inflict Fear (medium odds) to 1 foe.",
+					"cost": "8% HP",
+					"card": "Nekomata (talk)"
+				},
+				"Headbutt": {
+					"effect": "Medium Physical damage and inflict Forget (medium odds) to 1 foe.",
+					"cost": "9% HP",
+					"card": "Slime (itemize)"
+				},
+				"Hysterical Slap": {
+					"effect": "Medium Physical damage and inflict Rage (medium odds) to 1 foe.",
+					"cost": "9% HP",
+					"card": "Kumbhanda (talk)"
+				},
+				"Brain Shake": {
+					"effect": "Medium Physical damage and inflict Brainwash (medium odds) to 1 foe.",
+					"cost": "9% HP",
+					"card": "Inugami (both)"
+				},
+				"Sledgehammer": {
+					"effect": "Medium Physical damage and inflict Dizzy (medium odds) to 1 foe.",
+					"cost": "10% HP",
+					"card": "Ippon-Datara (both)"
+				},
+				"Skull Cracker": {
+					"effect": "Medium Physical damage and inflict Confuse (medium odds) to 1 foe.",
+					"cost": "10% HP",
+					"card": "Nue (itemize)"
+				},
+				"Negative Pile": {
+					"effect": "Heavy Physical damage and inflict Despair (medium odds) to 1 foe.",
+					"cost": "12% HP",
+					"card": "Lamia (talk)"
+				},
+				"Rising Slash": {
+					"effect": "Heavy Physical damage to 1 foe. More powerful under Baton Pass.",
+					"cost": "14% HP",
+					"card": "Dakini (talk)"
+				},
+				"Deadly Fury": {
+					"effect": "Severe Physical damage to 1 foe. More powerful under Baton Pass.",
+					"cost": "18% HP",
+					"card": "Chernobog (itemize)"
+				},
+
+				"Cornered Fang": {
+					"effect": "Medium Physical damage to 1 foe. More powerful when being ambushed.",
+					"cost": "10% HP"
+					},
+				"Lucky Punch": {
+					"effect": "Minuscule Physical damage to 1 foe. High critical rate.",
+					"cost": "6% HP",
+					"card": "Obariyon (itemize)"
+				},
+
+				"Miracle Punch": {
+					"effect": "Medium Physical damage to 1 foe. High critical rate.",
+					"cost": "8% HP",
+					"card": "Ganesha (both)"
+				},
+
+				"Cross Slash": {
+					"effect": "Heavy Physical damage to 1 foe 2x. High accuracy. Unique to Izanagi.",
+					"cost": "20% HP"
+					},
+				"Beast Weaver": {
+				"effect": "Colossal Physical damage to 1 foe and user's attack power is greatly reduced (independent from -kaja/-nda effects.) Unique to Ariadne.",
+				"cost": "20% HP"
+				}
+			},
+			"MultiTarget": {
+				"Vajra Blast": {
+					"effect": "Medium Physical damage to all foes.",
+					"cost": "14% HP",
+					"card": "Kin-Ki (talk)"
+				},
+				"Vicious Strike": {
+					"effect": "Medium Physical damage to all foes.",
+					"cost": "18% HP",
+					"card": "Yaksini (itemize)"
+				},
+				"Heat Wave": {
+					"effect": "Heavy Physical damage to all foes.",
+					"cost": "20% HP"
+					},
+				"Vorpal Blade": {
+					"effect": "Severe Physical damage to all foes.",
+					"cost": "23% HP",
+					"card": "Siegfried (itemize)"
+				},
+				"Gigantomachia": {
+					"effect": "Colossal Physical damage to all foes.",
+					"cost": "25% HP",
+					"card": "Asterius (itemize)"
+				},
+				"Deathbound": {
+					"effect": "Medium Physical damage to all foes 1x to 2x.",
+					"cost": "22% HP",
+					"card": "Dakini (itemize)"
+				},
+				"Rampage": {
+					"effect": "Light Physical damage to all foes 1x to 3x.",
+					"cost": "13% HP",
+					"card": "Oni (both)"
+				},
+				"Agneyastra": {
+					"effect": "Medium Physical damage to all foes 1x to 3x.",
+					"cost": "24% HP",
+					"card": "Ardha (itemize)"
+				},
+				"Swift Strike": {
+					"effect": "Light Physical damage to all foes 3x to 4x.",
+					"cost": "17% HP",
+					"card": "Byakko (itemize)"
+				},
+				"Hassou Tobi": {
+					"effect": "Light Physical damage to all foes 8x. Unique to Yoshitsune.",
+					"cost": "25% HP"
+					},
+				"Memory Blow": {
+					"effect": "Medium Physical damage and inflict Forget (low odds) to all foes.",
+					"cost": "15% HP",
+					"card": "Jikokuten (itemize)"
+				},
+				"Dormin Rush": {
+					"effect": "Medium Physical damage and inflict Sleep (low odds) to all foes.",
+					"cost": "16% HP",
+					"card": "Shiki-Ouji (itemize)"
+				},
+				"Oni Kagura": {
+					"effect": "Medium Physical damage and inflict Rage (low odds) to all foes.",
+					"cost": "16% HP",
+					"card": "Ose (talk)"
+				},
+				"Mind Slice": {
+					"effect": "Medium Physical damage and inflict Confuse (low odds) to all foes.",
+					"cost": "19% HP",
+					"card": "Rakshasa (itemize)"
+				},
+				"Flash Bomb": {
+					"effect": "Medium Physical damage and inflict Dizzy (low odds) to all foes.",
+					"cost": "19% HP",
+					"card": "Jatayu (itemize)"
+				},
+				"Bloodbath": {
+					"effect": "Heavy Physical damage and inflict Fear (low odds) to all foes.",
+					"cost": "19% HP",
+					"card": "Chernobog (talk)"
+				},
+				"Bad Beat": {
+					"effect": "Medium Physical damage and inflict Despair (low odds) to all foes.",
+					"cost": "21% HP",
+					"card": "Black Rider (itemize)"
+				},
+				"Brain Buster": {
+					"effect": "Heavy Physical damage and inflict Brainwash (low odds) to all foes.",
+					"cost": "21% HP",
+					"card": "Kurama Tengu (talk)"
+				}
+			}
+		},
+		"Gun": {
+			"Snap": {
+				"effect": "Medium Gun damage to 1 foe.",
+				"cost": "9% HP",
+				"card": "Mokoi (talk)"
+			},
+			"One-shot Kill": {
+				"effect": "Severe Gun damage to 1 foe. High critical rate.",
+				"cost": "17% HP",
+				"card": "Seth (itemize)"
+			},
+			"Triple Down": {
+				"effect": "Light Gun damage to all foes 3x.",
+				"cost": "16% HP",
+				"card": "White Rider (itemize)"
+			},
+			"Riot Gun": {
+				"effect": "Severe Gun damage to all foes.",
+				"cost": "24% HP",
+				"card": "Vishnu (itemize)"
+			}
+		}
+	},
+	"MagicSkills": {
+		"Fire": {
+			"Agi": {
+				"effect": "Light Fire damage to 1 foe.",
+				"cost": "4 SP",
+				"card": "Pyro Jack (talk)"
+			},
+			"Agilao": {
+				"effect": "Medium Fire damage to 1 foe.",
+				"cost": "8 SP",
+				"card": "Hua Po (both)"
+			},
+			"Agidyne": {
+				"effect": "Heavy Fire damage to 1 foe.",
+				"cost": "12 SP",
+				"card": "Belial (talk)"
+			},
+			"Inferno": {
+				"effect": "Severe Fire damage to 1 foe.",
+				"cost": "48 SP"
+			},
+			"Maragi": {
+				"effect": "Light Fire damage to all foes.",
+				"cost": "10 SP",
+				"card": "Orobas (itemize)"
+			},
+			"Maragion": {
+				"effect": "Medium Fire damage to all foes.",
+				"cost": "16 SP",
+				"card": "Belial (itemize)"
+			},
+			"Maragidyne": {
+				"effect": "Heavy Fire damage to all foes.",
+				"cost": "22 SP",
+				"card": "Lilith (talk)"
+			},
+			"Blazing Hell": {
+				"effect": "Severe Fire damage to all foes.",
+				"cost": "54 SP"
+			},
+			"Titanomachia": {
+				"effect": "Severe Fire damage to all foes and inflict Fear (high odds). Unique to Asterius.",
+				"cost": "34 SP"
+			}
+		},
+		"Ice": {
+			"Bufu": {
+				"effect": "Light Ice damage to 1 foe.",
+				"cost": "4 SP",
+				"card": "Jack Frost (talk)"
+			},
+			"Bufula": {
+				"effect": "Medium Ice damage to 1 foe.",
+				"cost": "8 SP",
+				"card": "Belphegor (talk)"
+			},
+			"Bufudyne": {
+				"effect": "Heavy Ice damage to 1 foe.",
+				"cost": "12 SP",
+				"card": "King Frost (talk)"
+			},
+			"Diamond Dust": {
+				"effect": "Severe Ice damage to 1 foe.",
+				"cost": "48 SP"
+			},
+			"Mabufu": {
+				"effect": "Light Ice damage to all foes.",
+				"cost": "10 SP",
+				"card": "Sui-Ki (both)"
+			},
+			"Mabufula": {
+				"effect": "Medium Ice damage to all foes.",
+				"cost": "16 SP",
+				"card": "Kushinada-Hime (talk)"
+			},
+			"Mabufudyne": {
+				"effect": "Heavy Ice damage to all foes.",
+				"cost": "22 SP",
+				"card": "Yamata no Orochi (talk)"
+			},
+			"Ice Age": {
+				"effect": "Severe Ice damage to all foes.",
+				"cost": "54 SP"
+			}
+		},
+		"Electric": {
+			"Zio": {
+				"effect": "Light Electric damage to 1 foe.",
+				"cost": "4 SP",
+				"card": "Agathion (itemize)"
+			},
+			"Zionga": {
+				"effect": "Medium Electric damage to 1 foe.",
+				"cost": "8 SP",
+				"card": "Naga (talk)"
+			},
+			"Ziodyne": {
+				"effect": "Heavy Electric damage to 1 foe.",
+				"cost": "12 SP",
+				"card": "Barong (talk)"
+			},
+			"Thunder Reign": {
+				"effect": "Severe Electric damage to 1 foe.",
+				"cost": "48 SP"
+			},
+			"Mazio": {
+				"effect": "Light Electric damage to all foes.",
+				"cost": "10 SP",
+				"card": "Shiisaa (itemize)"
+			},
+			"Mazionga": {
+				"effect": "Medium Electric damage to all foes.",
+				"cost": "16 SP",
+				"card": "Queen Mab (talk)"
+			},
+			"Maziodyne": {
+				"effect": "Heavy Electric damage to all foes.",
+				"cost": "22 SP",
+				"card": "Thor (talk)"
+			},
+			"Wild Thunder": {
+				"effect": "Severe Electric damage to all foes.",
+				"cost": "54 SP"
+			}
+		},
+		"Wind": {
+			"Garu": {
+				"effect": "Light Wind damage to 1 foe.",
+				"cost": "3 SP",
+				"card": "Kelpie (talk)"
+			},
+			"Garula": {
+				"effect": "Medium Wind damage to 1 foe.",
+				"cost": "6 SP",
+				"card": "Isis (talk)"
+			},
+			"Garudyne": {
+				"effect": "Heavy Wind damage to 1 foe.",
+				"cost": "10 SP",
+				"card": "Garuda (talk)"
+			},
+			"Panta Rhei": {
+				"effect": "Severe Wind damage to 1 foe",
+				"cost": "42 SP"
+			},
+			"Magaru": {
+				"effect": "Light Wind damage to all foes.",
+				"cost": "8 SP",
+				"card": "Sudama (itemize)"
+			},
+			"Magarula": {
+				"effect": "Medium Wind damage to all foes.",
+				"cost": "14 SP",
+				"card": "Fuu-Ki (talk)"
+			},
+			"Magarudyne": {
+				"effect": "Heavy Wind damage to all foes.",
+				"cost": "20 SP",
+				"card": "Baal (talk)"
+			},
+			"Vacuum Wave": {
+				"effect": "Severe Wind damage to all foes.",
+				"cost": "48 SP"
+			}
+		},
+		"Psychokinesis": {
+			"Psi": {
+				"effect": "Light Psy damage to 1 foe.",
+				"cost": "4 SP",
+				"card": "Kodama (talk)"
+			},
+			"Psio": {
+				"effect": "Medium Psy damage to 1 foe.",
+				"cost": "8 SP",
+				"card": "Kaiwan (talk)"
+			},
+			"Psiodyne": {
+				"effect": "Heavy Psy damage to 1 foe.",
+				"cost": "12 SP",
+				"card": "Moloch (talk)"
+			},
+			"Psycho Force": {
+				"effect": "Severe Psy damage to 1 foe.",
+				"cost": "48 SP"
+			},
+			"Mapsi": {
+				"effect": "Light Psy damage to all foes.",
+				"cost": "10 SP",
+				"card": "Shiki-Ouji (talk)"
+			},
+			"Mapsio": {
+				"effect": "Medium Psy damage to all foes.",
+				"cost": "16 SP",
+				"card": "Kaiwan (itemize)"
+			},
+			"Mapsiodyne": {
+				"effect": "Heavy Psy damage to all foes.",
+				"cost": "22 SP",
+				"card": "Forneus (talk)"
+			},
+			"Psycho Blast": {
+				"effect": "Severe Psy damage to all foes.",
+				"cost": "54 SP"
+			}
+		},
+		"Nuclear": {
+			"Frei": {
+				"effect": "Light Nuclear damage to 1 foe.",
+				"cost": "4 SP",
+				"card": "Makami (talk)"
+			},
+			"Freila": {
+				"effect": "Medium Nuclear damage to 1 foe.",
+				"cost": "8 SP",
+				"card": "Ara Mitama (itemize)"
+			},
+			"Freidyne": {
+				"effect": "Heavy Nuclear damage to 1 foe.",
+				"cost": "12 SP",
+				"card": "Titania (talk)"
+			},
+			"Atomic Flare": {
+				"effect": "Severe Nuclear damage to 1 foe.",
+				"cost": "48 SP"
+			},
+			"Mafrei": {
+				"effect": "Light Nuclear damage to all foes.",
+				"cost": "10 SP",
+				"card": "Suzaku (itemize)"
+			},
+			"Mafreila": {
+				"effect": "Medium Nuclear damage to all foes.",
+				"cost": "16 SP",
+				"card": "Mithras (talk)"
+			},
+			"Mafreidyne": {
+				"effect": "Heavy Nuclear damage to all foes.",
+				"cost": "22 SP",
+				"card": "Bishamonten (itemize)"
+			},
+			"Cosmic Flare": {
+				"effect": "Severe Nuclear damage to all foes.",
+				"cost": "54 SP"
+			}
+		},
+		"Bless": {
+			"Kouha": {
+				"effect": "Light Bless damage to 1 foe.",
+				"cost": "4 SP",
+				"card": "Archangel (talk)"
+			},
+			"Kouga": {
+				"effect": "Medium Bless damage to 1 foe.",
+				"cost": "8 SP",
+				"card": "Unicorn (talk)"
+			},
+			"Kougaon": {
+				"effect": "Heavy Bless damage to 1 foe.",
+				"cost": "12 SP",
+				"card": "Horus (itemize)"
+			},
+			"Makouha": {
+				"effect": "Light Bless damage to all foes.",
+				"cost": "10 SP",
+				"card": "Anubis (itemize)"
+			},
+			"Makouga": {
+				"effect": "Medium Bless damage to all foes.",
+				"cost": "16 SP",
+				"card": "Daisoujou (itemize)"
+			},
+			"Makougaon": {
+				"effect": "Heavy Bless damage to all foes.",
+				"cost": "22 SP",
+				"card": "Dominion (both)"
+			},
+			"Divine Judgement": {
+				"effect": "Half remaining HP of 1 foe.",
+				"cost": "48 SP"
+			},
+			"Hama": {
+				"effect": "Small chance of instantly killing 1 foe.",
+				"cost": "8 SP",
+				"card": "Angel (talk)"
+			},
+			"Hamaon": {
+				"effect": "Medium chance of instantly killing 1 foe.",
+				"cost": "15 SP",
+				"card": "Anubis (talk)"
+			},
+			"Mahama": {
+				"effect": "Small chance of instantly killing all foes.",
+				"cost": "18 SP",
+				"card": "Power (talk)"
+			},
+			"Mahamaon": {
+				"effect": "Medium chance of instantly killing all foes.",
+				"cost": "34 SP",
+				"card": "Melchizedek (itemize)"
+			},
+			"Samsara": {
+				"effect": "High chance of instantly killing all foes. Unique to Daisoujou.",
+				"cost": "44 SP"
+			},
+			"Shining Arrows": {
+				"effect": "Light Bless damage to all foes 4x to 8x. Unique to Kaguya.",
+				"cost": "22 SP"
+			}
+		},
+		"Curse": {
+			"Eiha": {
+				"effect": "Light Curse damage to 1 foe.",
+				"cost": "4 SP"
+			},
+			"Eiga": {
+				"effect": "Medium Curse damage to 1 foe.",
+				"cost": "8 SP",
+				"card": "Choronzon (talk)"
+			},
+			"Eigaon": {
+				"effect": "Heavy Curse damage to 1 foe.",
+				"cost": "12 SP",
+				"card": "Nebiros (both)"
+			},
+			"Maeiha": {
+				"effect": "Light Curse damage to all foes.",
+				"cost": "10 SP",
+				"card": "Choronzon (itemize)"
+			},
+			"Maeiga": {
+				"effect": "Medium Curse damage to all foes.",
+				"cost": "16 SP",
+				"card": "Pazuzu (itemize)"
+			},
+			"Maeigaon": {
+				"effect": "Heavy Curse damage to all foes.",
+				"cost": "22 SP",
+				"card": "Mara (talk)"
+			},
+			"Demonic Decree": {
+				"effect": "Half remaining HP of 1 foe.",
+				"cost": "48 SP"
+			},
+			"Mudo": {
+				"effect": "Small chance of instantly killing 1 foe.",
+				"cost": "8 SP",
+				"card": "Nue (talk)"
+			},
+			"Mudoon": {
+				"effect": "Medium chance of instantly killing 1 foe.",
+				"cost": "15 SP",
+				"card": "Girimehkala (talk)"
+			},
+			"Mamudo": {
+				"effect": "Small chance of instantly killing all foes.",
+				"cost": "18 SP"
+			},
+			"Mamudoon": {
+				"effect": "Medium chance of instantly killing all foes.",
+				"cost": "34 SP",
+				"card": "Alice (itemize)"
+			},
+			"Die For Me!": {
+				"effect": "High chance of instantly killing all foes. Unique to Alice.",
+				"cost": "44 SP"
+			},
+			"Magatsu Mandala": {
+				"effect": "Heavy Curse damage to all foes and inflict Confuse/Fear/Despair (medium odds). Unique to Magatsu-Izanagi.",
+				"cost": "30 SP"
+			},
+			"Abyssal Wings": {
+				"effect": "Severe Curse damage to all foes. Unique to Tsukiyomi.",
+				"cost": "30 SP"
+			}
+		},
+		"Almighty": {
+			"Megido": {
+				"effect": "Medium Almighty damage to all foes.",
+				"cost": "15 SP",
+				"card": "Thoth (talk)"
+			},
+			"Megidola": {
+				"effect": "Heavy Almighty damage to all foes.",
+				"cost": "24 SP",
+				"card": "Pale Rider (itemize)"
+			},
+			"Megidolaon": {
+				"effect": "Severe Almighty damage to all foes.",
+				"cost": "38 SP",
+				"card": "Mot (talk)"
+			},
+			"Life Drain": {
+				"effect": "Drains HP from 1 foe.",
+				"cost": "3 SP",
+				"card": "Incubus (talk)"
+			},
+			"Spirit Drain": {
+				"effect": "Drains SP from 1 foe.",
+				"cost": "3 SP",
+				"card": "Hariti (itemize)"
+			},
+			"Foul Breath": {
+				"effect": "Increase susceptibility to all ailments of 1 foe.",
+				"cost": "8 SP",
+				"card": "Mothman (itemize)"
+			},
+			"Stagnant Air": {
+				"effect": "Increase susceptibility to all ailments of all foes and allies.",
+				"cost": "5 SP",
+				"card": "Black Ooze (itemize)"
+			},
+			"Ghastly Wail": {
+				"effect": "Instantly kill all foes under Fear.",
+				"cost": "28 SP",
+				"card": "Skadi (talk)"
+			},
+			"Black Viper": {
+				"effect": "Severe Almighty damage to 1 foe.",
+				"cost": "48 SP"
+			},
+			"Morning Star": {
+				"effect": "Severe Almighty damage to all foes. Unique to Lucifer.",
+				"cost": "52 SP"
+			},
+			"Door of Hades": {
+				"effect": "Heavy Almighty damage to all foes with medium chance of instant kill. Unique to Thanatos.",
+				"cost": "32 SP"
+			}
+		},
+		"Ailment": {
+			"Physiological": {
+				"Dazzler": {
+					"effect": "Inflict Dizzy (high odds) to 1 foe.",
+					"cost": "5 SP",
+					"card": "Archangel (itemize)"
+				},
+				"Nocturnal Flash": {
+					"effect": "Inflict Dizzy (medium odds) to all foes.",
+					"cost": "12 SP",
+					"card": "Narcissus (talk)"
+				},
+				"Makajama": {
+					"effect": "Inflict Forget (high odds) to 1 foe.",
+					"cost": "5 SP",
+					"card": "Makami (itemize)"
+				},
+				"Makajamaon": {
+					"effect": "Inflict Forget (medium odds) to all foes.",
+					"cost": "12 SP",
+					"card": "Mothman (talk)"
+				},
+				"Dormina": {
+					"effect": "Inflict Sleep (high odds) to 1 foe.",
+					"cost": "5 SP",
+					"card": "Sandman (talk)"
+				},
+				"Lullaby": {
+					"effect": "Inflict Sleep (medium odds) to all foes.",
+					"cost": "12 SP",
+					"card": "Lilim (itemize)"
+				}
+			},
+			"Mental": {
+				"Pulinpa": {
+					"effect": "Inflict Confuse (high odds) to 1 foe.",
+					"cost": "5 SP",
+					"card": "Mandrake (talk)"
+				},
+				"Tentarafoo": {
+					"effect": "Inflict Confuse (medium odds) to all foes.",
+					"cost": "12 SP"
+					},
+				"Evil Touch": {
+					"effect": "Inflict Fear (high odds) to 1 foe.",
+					"cost": "5 SP",
+					"card": "Black Ooze (talk)"
+				},
+				"Evil Smile": {
+					"effect": "Inflict Fear (medium odds) to all foes.",
+					"cost": "12 SP",
+					"card": "Decarabia (talk)"
+				},
+				"Ominous Words": {
+					"effect": "Inflict Despair (high odds) to 1 foe.",
+					"cost": "5 SP",
+					"card": "Pisaca (talk)"
+				},
+				"Abysmal Surge": {
+					"effect": "Inflict Despair (medium odds) to all foes.",
+					"cost": "12 SP",
+					"card": "Arahabaki (talk)"
+				},
+				"Taunt": {
+					"effect": "Inflict Rage (high odds) to 1 foe.",
+					"cost": "5 SP",
+					"card": "Koppa Tengu (talk)"
+				},
+				"Wage War": {
+					"effect": "Inflict Rage (medium odds) to all foes.",
+					"cost": "12 SP",
+					"card": "Yaksini (talk)"
+				},
+				"Marin Karin": {
+					"effect": "Inflict Brainwash (high odds) to 1 foe.",
+					"cost": "5 SP",
+					"card": "Lilim (talk)"
+				},
+				"Brain Jack": {
+					"effect": "Inflict Brainwash (medium odds) to all foes.",
+					"cost": "12 SP"
+					}
+			}
+		}
+	},
+	"HealAssistSkills": {
+		"Healing": {
+			"Dia": {
+				"effect": "Slightly restore 1 ally's HP.",
+				"cost": "3 SP",
+				"card": "Pixie (both)"
+			},
+			"Diarama": {
+				"effect": "Moderately restore 1 ally's HP.",
+				"cost": "6 SP",
+				"card": "High Pixie (both)"
+			},
+			"Diarahan": {
+				"effect": "Fully restore 1 ally's HP.",
+				"cost": "18 SP",
+				"card": "Kaguya Hime (itemize)"
+			},
+			"Media": {
+				"effect": "Slight restore party's HP.",
+				"cost": "7 SP"
+			},
+			"Mediarama": {
+				"effect": "Moderately restore party's HP.",
+				"cost": "12 SP",
+				"card": "Kikuri-Hime (talk)"
+			},
+			"Mediarahan": {
+				"effect": "Fully restore party's HP.",
+				"cost": "30 SP",
+				"card": "Titania (itemize)"
+			},
+			"Recarm": {
+				"effect": "Revive 1 ally with 50% HP recovered.",
+				"cost": "8 SP",
+				"card": "Leanan Sidhe (itemize)"
+			},
+			"Samarecarm": {
+				"effect": "Revive 1 ally with all HP recovered.",
+				"cost": "18 SP",
+				"card": "Unicorn (itemize)"
+			},
+			"Baisudi": {
+				"effect": "Cure Burn/Freeze/Shock of 1 ally.",
+				"cost": "4 SP",
+				"card": "Angel (itemize)"
+			},
+			"Mabaisudi": {
+				"effect": "Cure Burn/Freeze/Shock of party.",
+				"cost": "8 SP"
+			},
+			"Patra": {
+				"effect": "Cure Dizzy/Forget/Sleep/Hunger of 1 ally.",
+				"cost": "4 SP",
+				"card": "Silky (talk)"
+			},
+			"Me Patra": {
+				"effect": "Cure Dizzy/Forget/Sleep/Hunger of party.",
+				"cost": "8 SP",
+				"card": "Nigi Mitama (itemize)"
+			},
+			"Energy Drop": {
+				"effect": "Cure Confuse/Fear/Despair/Rage/Brainwash of 1 ally.",
+				"cost": "4 SP",
+				"card": "Mandrake (itemize)"
+			},
+			"Energy Shower": {
+				"effect": "Cure Confuse/Fear/Despair/Rage/Brainwash of party.",
+				"cost": "8 SP",
+				"card": "Parvati (talk)"
+			},
+			"Amrita Drop": {
+				"effect": "Cure all ailments of 1 ally except for special status.",
+				"cost": "6 SP",
+				"card": "Seiryu (itemize)"
+			},
+			"Amrita Shower": {
+				"effect": "Cure all ailments of party except for special status.",
+				"cost": "12 SP",
+				"card": "Scathach (talk)"
+			},
+			"Salvation": {
+				"effect": "Fully restore HP and cure all ailments of party except for special status.",
+				"cost": "48 SP",
+				"card": "Ishtar (itemize)"
+			},
+			"Cadenza": {
+				"effect": "Restore 50% HP of party and increase evasion rate. Unique to Orpheus.",
+				"cost": "24 SP"
+			},
+			"Oratorio": {
+				"effect": "Fully restore party's HP and negate all -nda debuffs. Unique to Messiah.",
+				"cost": "38 SP"
+			}
+		},
+		"Support": {
+			"Negatable": {
+				"Tarukaja": {
+					"effect": "Increase 1 ally's Attack power for 3 turns.",
+					"cost": "8 SP",
+					"card": "Eligor (both)"
+				},
+				"Rakukaja": {
+					"effect": "Increase 1 ally's Defense for 3 turns.",
+					"cost": "8 SP",
+					"card": "Agathion (talk)"
+				},
+				"Sukukaja": {
+					"effect": "Increase 1 ally's Agility for 3 turns.",
+					"cost": "8 SP",
+					"card": "Sudama (talk)"
+				},
+				"Heat Riser": {
+					"effect": "Increase 1 ally's Attack, Defense and Agility for 3 turns.",
+					"cost": "30 SP",
+					"card": "Magatsu-Izanagi (itemize)"
+				},
+				"Matarukaja": {
+					"effect": "Increase party's Attack power for 3 turns.",
+					"cost": "24 SP",
+					"card": "Ose (itemize)"
+				},
+				"Marakukaja": {
+					"effect": "Increase party's Defense for 3 turns.",
+					"cost": "24 SP",
+					"card": "Sarasvati (talk)"
+				},
+				"Masukukaja": {
+					"effect": "Increase party's Agility for 3 turns.",
+					"cost": "24 SP",
+					"card": "Melchizedek (talk)"
+				},
+				"Thermopylae": {
+					"effect": "Increase party's Attack, Defense and Agility for 3 turns.  Only usable if the party is being ambushed.",
+					"cost": "30 SP",
+					"card": "Dionysus (itemize)"
+				},
+				"Tarunda": {
+					"effect": "Decrease 1 foe's Attack power for 3 turns.",
+					"cost": "8 SP",
+					"card": "Slime (talk)"
+				},
+				"Rakunda": {
+					"effect": "Decrease 1 foe's Defense for 3 turns.",
+					"cost": "8 SP",
+					"card": "Leanan Sidhe (talk)"
+				},
+				"Sukunda": {
+					"effect": "Decrease 1 foe's Agility for 3 turns.",
+					"cost": "8 SP",
+					"card": "Obariyon (talk)"
+				},
+				"Debilitate": {
+					"effect": "Decrease 1 foe's Attack, Defense and Agility for 3 turns.",
+					"cost": "30 SP",
+					"card": "Trumpeter (itemize)"
+				},
+				"Matarunda": {
+					"effect": "Decrease all foes' Attack power for 3 turns.",
+					"cost": "24 SP",
+					"card": "Rangda (talk)"
+				},
+				"Marakunda": {
+					"effect": "Decrease all foes' Defense for 3 turns.",
+					"cost": "24 SP",
+					"card": "Girimehkala (itemize)"
+				},
+				"Masukunda": {
+					"effect": "Decrease all foes' Agility for 3 turns.",
+					"cost": "24 SP",
+					"card": "Forneus (itemize)"
+				}
+			},
+			"NonNegatable": {
+				"Rebellion": {
+					"effect": "Increase 1 ally's critical rate for 3 turns.",
+					"cost": "5 SP"
+					},
+				"Revolution": {
+					"effect": "Increase all foes and allies' critical rate for 3 turns.",
+					"cost": "5 SP"
+					},
+				"Charge": {
+					"effect": "Multiply user's next Physical or Gun attack damage by 2.5.",
+					"cost": "15 SP",
+					"card": "Cu Chulainn (itemize)"
+				},
+				"Concentrate": {
+					"effect": "Multiply user's next magical attack damage by 2.5.",
+					"cost": "15 SP",
+					"card": "Mot (itemize)"
+				},
+				"Ultra Charge": {
+					"effect": "Multiply party's next attack damage by 2.5 regardless of type. Unique to Futaba.",
+					"cost": "Navi"
+					}
+			},
+			"Shields": {
+				"Fire Wall": {
+					"effect": "Erect a shield on 1 ally to reduce Fire damage  and cover innate Fire weakness for 3 turns.",
+					"cost": "18 SP",
+					"card": "Koropokkuru (talk)"
+				},
+				"Ice Wall": {
+					"effect": "Erect a shield on 1 ally to reduce Ice damage  and cover innate Ice weakness for 3 turns.",
+					"cost": "18 SP",
+					"card": "Onmoraki (talk)"
+				},
+				"Elec Wall": {
+					"effect": "Erect a shield on 1 ally to reduce Electric damage  and cover innate Electric weakness for 3 turns.",
+					"cost": "18 SP",
+					"card": "Apsaras (talk)"
+				},
+				"Wind Wall": {
+					"effect": "Erect a shield on 1 ally to reduce Wind damage  and cover innate Wind weakness for 3 turns.",
+					"cost": "18 SP",
+					"card": "Kushinada-Hime (itemize)"
+				},
+				"Psy Wall": {
+					"effect": "Erect a shield on 1 ally to reduce Psy damage  and cover innate Psy weakness for 3 turns.",
+					"cost": "18 SP",
+					"card": "Oberon (talk)"
+				},
+				"Nuke Wall": {
+					"effect": "Erect a shield on 1 ally to reduce Nuclear damage  and cover innate Nuclear weakness for 3 turns.",
+					"cost": "18 SP"
+					},
+				"Tetraja": {
+					"effect": "Erect shields on party to nullify one instant death attack of Bless or Curse types.",
+					"cost": "24 SP",
+					"card": "Principality (itemize)"
+				},
+				"Tetrakarn": {
+					"effect": "Erect a shield on 1 ally to repel 1 Physical or Gun attack.",
+					"cost": "36 SP"
+					},
+				"Makarakarn": {
+					"effect": "Erect a shield on 1 ally to repel 1 magical attack.",
+					"cost": "36 SP",
+					"card": "Abaddon (itemize)"
+				}
+			},
+			"Negation": {
+				"Dekaja": {
+					"effect": "Negate all -kaja buff effects of all foes.",
+					"cost": "10 SP",
+					"card": "Anzu (itemize)"
+				},
+				"Dekunda": {
+					"effect": "Negate all -nda debuff effects of party.",
+					"cost": "10 SP",
+					"card": "Mokoi (itemize)"
+				},
+				"Fire Break": {
+					"effect": "Suppress innate Fire resistances of all foes for 3 turns.",
+					"cost": "15 SP",
+					"card": "Orobas (talk)"
+				},
+				"Ice Break": {
+					"effect": "Suppress innate Ice resistances of all foes for 3 turns.",
+					"cost": "15 SP",
+					"card": "Andras (itemize)"
+				},
+				"Elec Break": {
+					"effect": "Suppress innate Electric resistances of all foes for 3 turns.",
+					"cost": "15 SP"
+					},
+				"Wind Break": {
+					"effect": "Suppress innate Wind resistances of all foes for 3 turns.",
+					"cost": "15 SP",
+					"card": "Anzu (talk)"
+				},
+				"Psy Break": {
+					"effect": "Suppress innate Psy resistances of all foes for 3 turns.",
+					"cost": "15 SP",
+					"card": "Red Rider (itemize)"
+				},
+				"Nuke Break": {
+					"effect": "Suppress innate Nuclear resistances of all foes for 3 turns.",
+					"cost": "15 SP"
+					},
+				"Tetra Break": {
+					"effect": "Remove physical-repellent shields from all foes.",
+					"cost": "18 SP",
+					"card": "Legion (talk)"
+				},
+				"Makara Break": {
+					"effect": "Remove magic-repellent shields from all foes.",
+					"cost": "18 SP"
+				}
+			}
+		}
+	},
+	"PassiveSkills": {
+		"Counter": {
+			"Counter": {
+				"effect": "10% chance of reflecting Physical attacks.",
+				"card": "Setanta (itemize)"
+			},
+			"Counterstrike": {
+				"effect": "15% chance of reflecting Physical attacks.",
+				"card": "Valkyrie (talk)"
+			},
+			"High Counter": {
+				"effect": "20% chance of reflecting Physical attacks.",
+				"card": "Kali (talk)"
+			}
+		},
+		"Offensive": {
+			"Fire Boost": {
+				"effect": "Strengthen Fire attacks by 25%.",
+				"card": "Decarabia (itemize)"
+			},
+			"Ice Boost": {
+				"effect": "Strengthen Ice attacks by 25%.",
+				"card": "Lachesis (itemize)"
+			},
+			"Elec Boost": {
+				"effect": "Strengthen Electric attacks by 25%.",
+				"card": "Naga (itemize)"
+			},
+			"Wind Boost": {
+				"effect": "Strengthen Wind attacks by 25%.",
+				"card": "Fuu-Ki (itemize)"
+			},
+			"Psy Boost": {
+				"effect": "Strengthen Psy attacks by 25%."
+			},
+			"Nuke Boost": {
+				"effect": "Strengthen Nuclear attacks by 25%.",
+				"card": "Feng Huang (itemize)"
+			},
+			"Bless Boost": {
+				"effect": "Strengthen (non instant death) Bless attacks by 25%."
+			},
+			"Curse Boost": {
+				"effect": "Strengthen (non instant death) Curse attacks by 25%."
+			},
+			"Almighty Boost": {
+				"effect": "Strengthen Almighty attacks by 25%."
+			},
+			"Fire Amp": {
+				"effect": "Strengthen Fire attacks by 50%.",
+				"card": "Surt (itemize)"
+			},
+			"Ice Amp": {
+				"effect": "Strengthen Ice attacks by 50%."
+			},
+			"Elec Amp": {
+				"effect": "Strengthen Electric attacks by 50%.",
+				"card": "Oberon (itemize)"
+			},
+			"Wind Amp": {
+				"effect": "Strengthen Wind attacks by 50%.",
+				"card": "Garuda (itemize)"
+			},
+			"Psy Amp": {
+				"effect": "Strengthen Psy attacks by 50%."
+			},
+			"Nuke Amp": {
+				"effect": "Strengthen Nuclear attacks by 50%.",
+				"card": "Moloch (itemize)"
+			},
+			"Bless Amp": {
+				"effect": "Strengthen (non instant death) Bless attacks by 50%."
+			},
+			"Curse Amp": {
+				"effect": "Strengthen (non instant death) Curse attacks by 50%."
+			},
+			"Almighty Amp": {
+				"effect": "Strengthen Almighty attacks by 50%."
+			},
+			"Hama Boost": {
+				"effect": "Increase success rate of instant death by Bless skills."
+			},
+			"Mudo Boost": {
+				"effect": "Increase success rate of instant death by Curse skills."
+			},
+			"Burn Boost": {
+				"effect": "Increase chance of inflicting Burn.",
+				"card": "Orthrus (itemize)"
+			},
+			"Freeze Boost": {
+				"effect": "Increase chance of inflicting Freeze.",
+				"card": "Baphomet (talk)"
+			},
+			"Shock Boost": {
+				"effect": "Increase chance of inflicting Shock.",
+				"card": "Baphomet (itemize)"
+			},
+			"Dizzy Boost": {
+				"effect": "Increase chance of inflicting Dizzy."
+			},
+			"Forget Boost": {
+				"effect": "Increase chance of inflicting Forget.",
+				"card": "Kusi Mitama (itemize)"
+			},
+			"Sleep Boost": {
+				"effect": "Increase chance of inflicting Sleep.",
+				"card": "Sandman (itemize)"
+			},
+			"Confuse Boost": {
+				"effect": "Increase chance of inflicting Confuse.",
+				"card": "Onmoraki (itemize)"
+			},
+			"Fear Boost": {
+				"effect": "Increase chance of inflicting Fear.",
+				"card": "Kodama (itemize)"
+			},
+			"Despair Boost": {
+				"effect": "Increase chance of inflicting Despair.",
+				"card": "Lamia (itemize)"
+			},
+			"Rage Boost": {
+				"effect": "Increase chance of inflicting Rage.",
+				"card": "Kumbhanda (itemize)"
+			},
+			"Brainwash Boost": {
+				"effect": "Increase chance of inflicting Brainwash.",
+				"card": "Succubus (talk)"
+			},
+			"Ailment Boost": {
+				"effect": "Increase chance of inflicting all ailments.",
+				"card": "Dionysus (talk)"
+			},
+			"Ambient Aid": {
+				"effect": "Greatly increase inflicting rate of all status effects under rainy day or special weather warning."
+			},
+			"Adverse Resolve": {
+				"effect": "Increase critical rate when being ambushed.",
+				"card": "Rakshasa (talk)"
+			},
+			"Touch n' Go": {
+				"effect": "Apply Sukukaja when performing Baton Pass."
+			},
+			"Apt Pupil": {
+				"effect": "Increase critical rate.",
+				"card": "Andras (talk)"
+			},
+			"Arms Master": {
+				"effect": "Half HP cost for physical skills.",
+				"card": "Chi You (itemize)"
+			},
+			"Spell Master": {
+				"effect": "Half SP cost for magic skills.",
+				"card": "Tsukuyomi (itemize)"
+			},
+			"Snipe": {
+				"effect": "Strengthen Gun attacks by 25%."
+			},
+			"Cripple": {
+				"effect": "Strengthen Gun attacks by 50%."
+			},
+			"Trigger Happy": {
+				"effect": "Increase critical rate of Gun attacks."
+			},
+			"Fortified Moxy": {
+				"effect": "Increase critical rate when beginning battle with preemptive turn."
+			},
+			"Magic Ability": {
+				"effect": "Strengthen all magical attacks by 25%."
+			}
+		},
+		"Defensive": {
+			"Resist Phys": {
+				"effect": "Reduce damage from Physical attacks."
+			},
+			"Resist Fire": {
+				"effect": "Reduce damage from Fire attacks."
+			},
+			"Resist Ice": {
+				"effect": "Reduce damage from Ice attacks."
+			},
+			"Resist Elec": {
+				"effect": "Reduce damage from Electric attacks."
+			},
+			"Resist Wind": {
+				"effect": "Reduce damage from Wind attacks."
+			},
+			"Resist Psy": {
+				"effect": "Reduce damage from Psy attacks."
+			},
+			"Resist Nuke": {
+				"effect": "Reduce damage from Nuclear attacks."
+			},
+			"Resist Bless": {
+				"effect": "Reduce damage from Bless attacks."
+			},
+			"Resist Curse": {
+				"effect": "Reduce damage from Curse attacks."
+			},
+			"Resist Dizzy": {
+				"effect": "Reduce susceptibility to Dizzy."
+			},
+			"Resist Forget": {
+				"effect": "Reduce susceptibility to Forget."
+			},
+			"Resist Sleep": {
+				"effect": "Reduce susceptibility to Sleep."
+			},
+			"Resist Confuse": {
+				"effect": "Reduce susceptibility to Confuse."
+			},
+			"Resist Fear": {
+				"effect": "Reduce susceptibility to Fear."
+			},
+			"Resist Despair": {
+				"effect": "Reduce susceptibility to Despair."
+			},
+			"Resist Rage": {
+				"effect": "Reduce susceptibility to Rage."
+			},
+			"Resist Brainwash": {
+				"effect": "Reduce susceptibility to Brainwash."
+			},
+			"Fortify Spirit": {
+				"effect": "Reduce susceptibilities to all ailments."
+			},
+			"Null Phys": {
+				"effect": "Impart immunity against Physical attacks."
+			},
+			"Null Fire": {
+				"effect": "Impart immunity against Fire attacks."
+			},
+			"Null Ice": {
+				"effect": "Impart immunity against Ice attacks."
+			},
+			"Null Elec": {
+				"effect": "Impart immunity against Electric attacks."
+			},
+			"Null Wind": {
+				"effect": "Impart immunity against Wind attacks."
+			},
+			"Null Psy": {
+				"effect": "Impart immunity against Psy attacks."
+			},
+			"Null Nuke": {
+				"effect": "Impart immunity against Nuclear attacks."
+			},
+			"Null Bless": {
+				"effect": "Impart immunity against Bless attacks."
+			},
+			"Null Curse": {
+				"effect": "Impart immunity against Curse attacks."
+			},
+			"Null Dizzy": {
+				"effect": "Impart immunity against Dizzy."
+			},
+			"Null Forget": {
+				"effect": "Impart immunity against Forget."
+			},
+			"Null Sleep": {
+				"effect": "Impart immunity against Sleep."
+			},
+			"Null Confuse": {
+				"effect": "Impart immunity against Confuse."
+			},
+			"Null Fear": {
+				"effect": "Impart immunity against Fear."
+			},
+			"Null Despair": {
+				"effect": "Impart immunity against Despair."
+			},
+			"Null Rage": {
+				"effect": "Impart immunity against Rage."
+			},
+			"Null Brainwash": {
+				"effect": "Impart immunity against Brainwash."
+			},
+			"Unshaken Will": {
+				"effect": "Impart immunity against all mental ailments.",
+				"card": "Mada (itemize)"
+			},
+			"Repel Phys": {
+				"effect": "Repel Physical attacks."
+			},
+			"Repel Fire": {
+				"effect": "Repel Fire attacks."
+			},
+			"Repel Ice": {
+				"effect": "Repel Ice attacks."
+			},
+			"Repel Elec": {
+				"effect": "Repel Electric attacks."
+			},
+			"Repel Wind": {
+				"effect": "Repel Wind attacks."
+			},
+			"Repel Psy": {
+				"effect": "Repel Psy attacks."
+			},
+			"Repel Nuke": {
+				"effect": "Repel Nuclear attacks."
+			},
+			"Repel Bless": {
+				"effect": "Repel Bless attacks."
+			},
+			"Repel Curse": {
+				"effect": "Repel Curse attacks."
+			},
+			"Drain Phys": {
+				"effect": "Absorb Physical attacks."
+			},
+			"Drain Fire": {
+				"effect": "Absorb Fire attacks."
+			},
+			"Drain Ice": {
+				"effect": "Absorb Ice attacks."
+			},
+			"Drain Elec": {
+				"effect": "Absorb Electric attacks."
+			},
+			"Drain Wind": {
+				"effect": "Absorb Wind attacks."
+			},
+			"Drain Psy": {
+				"effect": "Absorb Psy attacks."
+			},
+			"Drain Nuke": {
+				"effect": "Absorb Nuclear attacks."
+			},
+			"Drain Bless": {
+				"effect": "Absorb Bless attacks."
+			},
+			"Drain Curse": {
+				"effect": "Absorb Curse attacks."
+			},
+			"Sharp Student": {
+				"effect": "Lower odds of receiving critical hit.",
+				"card": "Zouchouten (itemize)"
+			},
+			"Firm Stance": {
+				"effect": "Half all incoming damage by sacrificing evasion completely."
+			}
+		},
+		"Evasion": {
+			"Dodge Physical": {
+				"effect": "Double evasion rate against Physical attacks."
+			},
+			"Dodge Fire": {
+				"effect": "Double evasion rate against Fire attacks."
+			},
+			"Dodge Ice": {
+				"effect": "Double evasion rate against Ice attacks."
+			},
+			"Dodge Elec": {
+				"effect": "Double evasion rate against Electric attacks."
+			},
+			"Dodge Wind": {
+				"effect": "Double evasion rate against Wind attacks."
+			},
+			"Dodge Psy": {
+				"effect": "Double evasion rate against Psy attacks."
+			},
+			"Dodge Nuke": {
+				"effect": "Double evasion rate against Nuclear attacks."
+			},
+			"Dodge Bless": {
+				"effect": "Double evasion rate against (non instant death) Bless attacks."
+			},
+			"Dodge Curse": {
+				"effect": "Double evasion rate against (non instant death) Curse attacks."
+			},
+			"Evade Physical": {
+				"effect": "Triple evasion rate against Physical attacks."
+			},
+			"Evade Fire": {
+				"effect": "Triple evasion rate against Fire attacks."
+			},
+			"Evade Ice": {
+				"effect": "Triple evasion rate against Ice attacks."
+			},
+			"Evade Elec": {
+				"effect": "Triple evasion rate against Electric attacks."
+			},
+			"Evade Wind": {
+				"effect": "Triple evasion rate against Wind attacks."
+			},
+			"Evade Psy": {
+				"effect": "Triple evasion rate against Psy attacks."
+			},
+			"Evade Nuke": {
+				"effect": "Triple evasion rate against Nuclear attacks."
+			},
+			"Evade Bless": {
+				"effect": "Triple evasion rate against (non instant death) Bless attacks."
+			},
+			"Evade Curse": {
+				"effect": "Triple evasion rate against (non instant death) Curse attacks."
+			},
+			"Angelic Grace": {
+				"effect": "Double evasion rate against all attacks except Hama/Mudo/Almighty.",
+				"card": "Sandalphon (itemize)"
+			},
+			"Climate Decorum": {
+				"effect": "Double evasion against all attacks under rainy day or special weather warning."
+			},
+			"Ali Dance": {
+				"effect": "Half hit rate of all incoming attacks."
+			},
+			"Pressing Stance": {
+				"effect": "Reduce hit rate by 2/3 of all incoming attack when being ambushed."
+			}
+		},
+		"Recovery": {
+			"Regenerate 1": {
+				"effect": "Restore 2% of max HP each turn in battle.",
+				"card": "Kin-Ki (itemize)"
+			},
+			"Regenerate 2": {
+				"effect": "Recover 4% of max HP each turn in battle.",
+				"card": "Koumokuten (itemize)"
+			},
+			"Regenerate 3": {
+				"effect": "Recover 6% of max HP each turn in battle.",
+				"card": "Quetzalcoatl (itemize)"
+			},
+			"Invigorate 1": {
+				"effect": "Recover 3 SP each turn in battle.",
+				"card": "Clotho (itemize)"
+			},
+			"Invigorate 2": {
+				"effect": "Recover 5 SP each turn in battle.",
+				"card": "Barong (itemize)"
+			},
+			"Invigorate 3": {
+				"effect": "Recover 7 SP each turn in battle.",
+				"card": "Throne (itemize)"
+			},
+			"Fast Heal": {
+				"effect": "Half the time needed to recover from ailments.",
+				"card": "Fortuna (itemize)"
+			},
+			"Insta-Heal": {
+				"effect": "Recover from an ailment in 1 turn.",
+				"card": "Messiah (Persona) (itemize)"
+			},
+			"Divine Grace": {
+				"effect": "Effects of healing magic are increased by 50%.",
+				"card": "Kikuri-Hime (itemize)"
+			},
+			"Soul Chain": {
+				"effect": "Recover 20 SP when performing Baton Pass."
+			}
+		},
+		"OncePerBattle": {
+			"Attack Master": {
+				"effect": "Automatic Tarukaja at the start of battle."
+			},
+			"Defense Master": {
+				"effect": "Automatic Rakukaja at the start of battle."
+			},
+			"Speed Master": {
+				"effect": "Automatic Sukukaja at the start of battle."
+			},
+			"Auto-Mataru": {
+				"effect": "Automatic Matarukaja at the start of battle. (Overwrites Attack Master)",
+				"card": "Ariadne (itemize)"
+			},
+			"Auto-Maraku": {
+				"effect": "Automatic Marakukaja at the start of battle. (Overwrites Defense Master)"
+			},
+			"Auto-Masuku": {
+				"effect": "Automatic Masukukaja at the start of battle. (Overwrites Speed Master)"
+			},
+			"Heat Up": {
+				"effect": "Recover 5% HP and 10 SP at the start of preemptive turn."
+			},
+			"Endure": {
+				"effect": "Survive one fatal blow with 1 HP remaining.",
+				"card": "Hecatoncheires (itemize)"
+			},
+			"Survival Trick": {
+				"effect": "Survive one instant death attack with 1 HP remaining.",
+				"card": "Abaddon (talk)"
+			},
+			"Enduring Soul": {
+				"effect": "Survive one fatal blow with HP completely recovered.",
+				"card": "Attis (itemize)"
+			}
+		},
+		"PostBattleEffect": {
+			"Growth 1": {
+				"effect": "Persona gains 1/4 EXP while inactive.",
+				"card": "Koppa Tengu (itemize)"
+			},
+			"Growth 2": {
+				"effect": "Persona gains 1/2 EXP while inactive.",
+				"card": "Thoth (itemize)"
+			},
+			"Growth 3": {
+				"effect": "Persona gains full EXP even while inactive.",
+				"card": "Izanagi (itemize)"
+			},
+			"Life Aid": {
+				"effect": "Recover 8% HP and SP after victory.",
+				"card": "Lakshmi (itemize)"
+			},
+			"Victory Cry": {
+				"effect": "Fully recover HP and SP after victory."
+			}
+		}
+	}
+}
