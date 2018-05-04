@@ -1,20 +1,26 @@
 PODS:
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
   - DynamicBlurView (2.0.2)
   - PopupDialog (0.7.1):
     - DynamicBlurView (~> 2.0)
 
 DEPENDENCIES:
+  - ChameleonFramework/Swift
   - PopupDialog (~> 0.7)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - ChameleonFramework
     - DynamicBlurView
     - PopupDialog
 
 SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
   PopupDialog: 39598b7d41719f5c025b4b70e62728bae7734fef
 
-PODFILE CHECKSUM: 23929bbe41ed0201355db62942595abef9810326
+PODFILE CHECKSUM: 000953b2b6bff65752d99508447566a83a62509f
 
 COCOAPODS: 1.5.0

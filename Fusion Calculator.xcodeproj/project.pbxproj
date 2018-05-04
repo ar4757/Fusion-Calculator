@@ -20,6 +20,8 @@
 		3D830D4B2065785D005A5D2E /* Fusion_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D830D4A2065785C005A5D2E /* Fusion_CalculatorTests.swift */; };
 		3D830D562065785E005A5D2E /* Fusion_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D830D552065785E005A5D2E /* Fusion_CalculatorUITests.swift */; };
 		3D830D64206578EE005A5D2E /* personas.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D830D63206578EE005A5D2E /* personas.json */; };
+		3DA3967F2099826A00896A54 /* SortMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3967E2099826A00896A54 /* SortMenuController.swift */; };
+		3DB28E44209A1E6600B64846 /* SortFusionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB28E43209A1E6600B64846 /* SortFusionController.swift */; };
 		3DB6A0F6206BD9030074FD98 /* PersonaStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6A0F5206BD9020074FD98 /* PersonaStatsViewController.swift */; };
 		3DB6A0F8206BD95A0074FD98 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6A0F7206BD95A0074FD98 /* MyPageViewController.swift */; };
 		3DF7E8B420968D2A00E75635 /* Fusion Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7E8B320968D2A00E75635 /* Fusion Methods.swift */; };
@@ -64,6 +66,8 @@
 		3D830D552065785E005A5D2E /* Fusion_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fusion_CalculatorUITests.swift; sourceTree = "<group>"; };
 		3D830D572065785E005A5D2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D830D63206578EE005A5D2E /* personas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = personas.json; sourceTree = "<group>"; };
+		3DA3967E2099826A00896A54 /* SortMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortMenuController.swift; sourceTree = "<group>"; };
+		3DB28E43209A1E6600B64846 /* SortFusionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortFusionController.swift; sourceTree = "<group>"; };
 		3DB6A0F5206BD9020074FD98 /* PersonaStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaStatsViewController.swift; sourceTree = "<group>"; };
 		3DB6A0F7206BD95A0074FD98 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		3DF7E8B320968D2A00E75635 /* Fusion Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fusion Methods.swift"; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 				3D5664A42095AAD40010A3DE /* SkillDetailsViewController.swift */,
 				3DF7E8B320968D2A00E75635 /* Fusion Methods.swift */,
 				3DF7E8B520969DA600E75635 /* ComboCell.swift */,
+				3DA3967E2099826A00896A54 /* SortMenuController.swift */,
+				3DB28E43209A1E6600B64846 /* SortFusionController.swift */,
 			);
 			path = "Fusion Calculator";
 			sourceTree = "<group>";
@@ -329,11 +335,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Fusion Calculator/Pods-Fusion Calculator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
 				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 			);
@@ -367,9 +375,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA3967F2099826A00896A54 /* SortMenuController.swift in Sources */,
 				3DB6A0F8206BD95A0074FD98 /* MyPageViewController.swift in Sources */,
 				3D830D3820657858005A5D2E /* TableViewController.swift in Sources */,
 				3D830D3620657858005A5D2E /* AppDelegate.swift in Sources */,
+				3DB28E44209A1E6600B64846 /* SortFusionController.swift in Sources */,
 				3DF7E8B420968D2A00E75635 /* Fusion Methods.swift in Sources */,
 				3D48650A206CBB1800BF1B95 /* PersonaFusionViewController.swift in Sources */,
 				3D59C05620661327002975FE /* MyTableCell.swift in Sources */,

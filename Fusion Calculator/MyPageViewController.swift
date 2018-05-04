@@ -16,8 +16,17 @@ class MyPageViewController: UIPageViewController {
     
     @IBOutlet weak var fusionSortButton: UIBarButtonItem!
     
+    @IBAction func toggleSortMenu(_ sender: Any) {
+        if ((self.orderedViewControllers[1] as! SortFusionController).opened) {
+            (self.orderedViewControllers[1] as! SortFusionController).closeMenu()
+        }
+        else {
+            (self.orderedViewControllers[1] as! SortFusionController).openMenu()
+        }
+    }
+    
     private(set) lazy var orderedViewControllers: [UIViewController] = {
-        return [self.createPersonaStatsViewController(pageNumber: 0, persona: receivedPersona!, name: receivedName!), self.createPersonaFusionViewController( pageNumber: 1, persona: receivedPersona!, name: receivedName!)]
+        return [self.createPersonaStatsViewController(pageNumber: 0, persona: receivedPersona!, name: receivedName!), self.createSortFusionController( pageNumber: 1, persona: receivedPersona!, name: receivedName!)]
     }()
     
     override func viewDidLoad() {
@@ -37,20 +46,27 @@ class MyPageViewController: UIPageViewController {
                                completion: nil)
             self.title = "Stats"
             self.fusionSortButton.isEnabled = false
+            self.fusionSortButton.tintColor = UIColor.clear
         }
         
         DispatchQueue.global().async {
             let combos = getRecipes(name: self.receivedName!, persona: self.receivedPersona!)
-            (self.orderedViewControllers[1] as! PersonaFusionViewController).combos = combos
-            while ((self.orderedViewControllers[1] as! PersonaFusionViewController).isViewLoaded == false) {
-                if ((self.orderedViewControllers[1] as! PersonaFusionViewController).isViewLoaded == true) {
+            while (((self.orderedViewControllers[1] as! SortFusionController).childViewControllers.isEmpty)) {
+                if (((self.orderedViewControllers[1] as! SortFusionController).childViewControllers.isEmpty) == false) {
+                    break
+                }
+            }
+            ((self.orderedViewControllers[1] as! SortFusionController).childViewControllers[0] as! PersonaFusionViewController).combos = combos
+            ((self.orderedViewControllers[1] as! SortFusionController).childViewControllers[0] as! PersonaFusionViewController).sortedTable = Array(combos)
+            while (((self.orderedViewControllers[1] as! SortFusionController).childViewControllers[0] as! PersonaFusionViewController).isViewLoaded == false) {
+                if (((self.orderedViewControllers[1] as! SortFusionController).childViewControllers[0] as! PersonaFusionViewController).isViewLoaded == true) {
                     break
                 }
             }
             DispatchQueue.main.async {
-                (self.orderedViewControllers[1] as! PersonaFusionViewController).tableView.reloadData()
-                (self.orderedViewControllers[1] as! PersonaFusionViewController).activityIndicatorView.stopAnimating()
-                (self.orderedViewControllers[1] as! PersonaFusionViewController).loadingView.isHidden = true
+                ((self.orderedViewControllers[1] as! SortFusionController).childViewControllers[0] as! PersonaFusionViewController).tableView.reloadData()
+                ((self.orderedViewControllers[1] as! SortFusionController).childViewControllers[0] as! PersonaFusionViewController).activityIndicatorView.stopAnimating()
+                ((self.orderedViewControllers[1] as! SortFusionController).childViewControllers[0] as! PersonaFusionViewController).loadingView.isHidden = true
             }
         }
         
@@ -77,15 +93,13 @@ class MyPageViewController: UIPageViewController {
         return contentViewController
     }
     
-    func createPersonaFusionViewController(pageNumber: Int, persona: Persona, name: String) -> UIViewController {
+    func createSortFusionController(pageNumber: Int, persona: Persona, name: String) -> UIViewController {
         let contentViewController =
-            storyboard?.instantiateViewController(withIdentifier: "PersonaFusionViewController")
-                as! PersonaFusionViewController
+            storyboard?.instantiateViewController(withIdentifier: "SortFusionController")
+                as! SortFusionController
         contentViewController.pageNumber = pageNumber
         contentViewController.persona = persona
         contentViewController.name = name
-        fusionSortButton.action = #selector(contentViewController.fusionToggleSort)
-        fusionSortButton.target = contentViewController;
         return contentViewController
     }
 }
@@ -155,10 +169,13 @@ extension MyPageViewController: UIPageViewControllerDelegate {
             if (currentIndex == 0) {
                 self.title = "Stats"
                 self.fusionSortButton.isEnabled = false
+                self.fusionSortButton.tintColor = UIColor.clear
             }
             else if (currentIndex == 1) {
                 self.title = "Fusion"
                 self.fusionSortButton.isEnabled = true
+                self.fusionSortButton.tintColor = nil
+
             }
         }
     }

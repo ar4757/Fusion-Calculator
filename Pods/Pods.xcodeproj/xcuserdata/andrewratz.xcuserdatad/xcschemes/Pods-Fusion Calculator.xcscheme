@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "24BA9193E6E323589B36E12108CD307A"
+               BlueprintIdentifier = "441C12332A45692FE16C7627A4C74C30"
                BuildableName = "Pods_Fusion_Calculator.framework"
                BlueprintName = "Pods-Fusion Calculator"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "24BA9193E6E323589B36E12108CD307A"
+            BlueprintIdentifier = "441C12332A45692FE16C7627A4C74C30"
             BuildableName = "Pods_Fusion_Calculator.framework"
             BlueprintName = "Pods-Fusion Calculator"
             ReferencedContainer = "container:Pods.xcodeproj">

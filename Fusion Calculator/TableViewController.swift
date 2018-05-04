@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 //
 //  ViewController.swift
@@ -36,47 +37,40 @@ var myStructDictionary: [String: Persona] = [:]
 
 class TableViewController: UITableViewController {
     
+    var sortedTable: [(key: String, value: Persona)] = []
     
-    @IBOutlet weak var sortButton: UIBarButtonItem!
-    
-    var sorted = false
-    
-    @objc func toggleSort() {
-        if (sorted == false) {
-            sorted = true
-        }
-        else {
-            sorted = false
-        }
+    func sortByLevel() {
+        sortedTable = Array(myStructDictionary).sorted { (aDic, bDic) -> Bool in
+            return aDic.value.level == bDic.value.level ? (aDic.key < bDic.key) : (aDic.value.level < bDic.value.level)}
         tableView.reloadData()
-        return
+    }
+    
+    func sortByName() {
+        sortedTable = Array(myStructDictionary).sorted { (aDic, bDic) -> Bool in
+            return aDic.key < bDic.key}
+        tableView.reloadData()
+    }
+    
+    func sortByArcana() {
+        sortedTable = Array(myStructDictionary).sorted { (aDic, bDic) -> Bool in
+            return aDic.value.arcana == bDic.value.arcana ? (aDic.value.level < bDic.value.level) : (aDic.value.arcana < bDic.value.arcana)}
+        tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myStructDictionary.count
     }
     
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "myProtoCell") as! MyTableCell
-        if (sorted == false) {
-            cell.lblFirstRow.text = Array(myStructDictionary)[indexPath.row].value.arcana + " " + Array(myStructDictionary)[indexPath.row].key
-            cell.persona = Array(myStructDictionary)[indexPath.row].value
-            cell.name = Array(myStructDictionary)[indexPath.row].key
-        }
-        else {
-            cell.lblFirstRow.text = Array(myStructDictionary).sorted { (aDic, bDic) -> Bool in
-                return aDic.key < bDic.key
-                }[indexPath.row].value.arcana + " " + Array(myStructDictionary).sorted { (aDic, bDic) -> Bool in
-                    return aDic.key < bDic.key
-                    }[indexPath.row].key
-            cell.persona = Array(myStructDictionary).sorted { (aDic, bDic) -> Bool in
-                return aDic.key < bDic.key
-                }[indexPath.row].value
-            cell.name = Array(myStructDictionary).sorted { (aDic, bDic) -> Bool in
-                return aDic.key < bDic.key
-                }[indexPath.row].key
-        }
+        let current = sortedTable[indexPath.row]
+        cell.arcanaLabel.text = current.value.arcana
+        cell.nameLabel.text = current.key
+        cell.levelLabel.text = "\(current.value.level)"
+        cell.persona = current.value
+        cell.name = current.key
         return cell
     }
     
@@ -99,8 +93,7 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+                
         let path = Bundle.main.path(forResource: "personas", ofType: "json")
         let url = URL(fileURLWithPath: path!)
         
@@ -122,8 +115,7 @@ class TableViewController: UITableViewController {
             print(error)
         }
         
-        sortButton.action = #selector(toggleSort)
-        sortButton.target = self;
+        sortedTable = Array(myStructDictionary)
         
     }
     
