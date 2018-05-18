@@ -17,8 +17,8 @@ class MyPageViewController: UIPageViewController {
     @IBOutlet weak var fusionSortButton: UIBarButtonItem!
     
     @IBAction func toggleSortMenu(_ sender: Any) {
-        if ((self.orderedViewControllers[1] as! SortFusionController).opened) {
-            (self.orderedViewControllers[1] as! SortFusionController).closeMenu()
+        if ((self.orderedViewControllers[1] as! SortFusionController).sortOpened) {
+            (self.orderedViewControllers[1] as! SortFusionController).hideMenu()
         }
         else {
             (self.orderedViewControllers[1] as! SortFusionController).openMenu()
@@ -69,7 +69,7 @@ class MyPageViewController: UIPageViewController {
                 ((self.orderedViewControllers[1] as! SortFusionController).childViewControllers[0] as! PersonaFusionViewController).loadingView.isHidden = true
             }
         }
-        
+
     }
     
     override func viewDidLayoutSubviews() {
@@ -180,6 +180,34 @@ extension MyPageViewController: UIPageViewControllerDelegate {
         }
     }
     
+}
+
+extension MyPageViewController {
+    func goToNextPage(animated: Bool = true) {
+        guard let currentViewController = self.viewControllers?.first else {
+            return
+        }
+        guard let nextViewController = dataSource?.pageViewController(self, viewControllerAfter: currentViewController) else {
+            return
+        }
+        setViewControllers([nextViewController], direction: .forward, animated: animated, completion: nil)
+    }
+    
+    func goToPreviousPage(animated: Bool = true) {
+        guard let currentViewController = self.viewControllers?.first else {
+            return
+        }
+        guard let previousViewController = dataSource?.pageViewController(self, viewControllerBefore: currentViewController) else {
+            return
+        }
+        setViewControllers([previousViewController], direction: .reverse, animated: animated, completion: nil)
+        
+        self.title = "Stats"
+        self.fusionSortButton.isEnabled = false
+        self.fusionSortButton.tintColor = UIColor.clear
+        
+        currentIndex = 0
+    }
 }
 
 

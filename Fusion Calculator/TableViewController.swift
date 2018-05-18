@@ -66,7 +66,21 @@ class TableViewController: UITableViewController {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "myProtoCell") as! MyTableCell
         let current = sortedTable[indexPath.row]
-        cell.arcanaLabel.text = current.value.arcana
+        if (current.value.arcana == "Hierophant") {
+            cell.arcanaLabel.text = "Hiero."
+        }
+        else if (current.value.arcana == "Hanged Man") {
+            cell.arcanaLabel.text = "Hanged"
+        }
+        else if (current.value.arcana == "Temperance") {
+            cell.arcanaLabel.text = "Temper."
+        }
+        else if (current.value.arcana == "Judgement") {
+            cell.arcanaLabel.text = "Judge."
+        }
+        else {
+            cell.arcanaLabel.text = current.value.arcana
+        }
         cell.nameLabel.text = current.key
         cell.levelLabel.text = "\(current.value.level)"
         cell.persona = current.value

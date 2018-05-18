@@ -20,6 +20,7 @@ class MyTableCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        arcanaLabel.frame = CGRect(x: arcanaLabel.frame.minX, y: arcanaLabel.frame.minY, width: 104, height: 37)
         arcanaLabel.layer.cornerRadius = 5
         arcanaLabel.layer.masksToBounds = true
     }
