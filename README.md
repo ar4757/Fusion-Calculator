@@ -1,6 +1,6 @@
 # Fusion-Calculator
 
-<img src="https://github.com/ar4757/Fusion-Calculator/blob/master/GitHub%20Images/demo.gif?raw=true" width="600" height="1065">
+<img src="https://github.com/ar4757/Fusion-Calculator/blob/master/GitHub%20Images/demo.gif?raw=true" width="120" height="213">
 
 Fusion Calculator is a iOS application developed in Swift, made as a companion app for players of the game Persona 5.
 
