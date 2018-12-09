@@ -7,19 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D01A76F209522650095C888 /* skills.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D01A76E209522640095C888 /* skills.json */; };
 		3D48650A206CBB1800BF1B95 /* PersonaFusionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D486509206CBB1800BF1B95 /* PersonaFusionViewController.swift */; };
 		3D5664A52095AAD40010A3DE /* SkillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5664A42095AAD40010A3DE /* SkillDetailsViewController.swift */; };
 		3D59C05620661327002975FE /* MyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59C05520661327002975FE /* MyTableCell.swift */; };
-		3D66C42021B737F500715DA2 /* p5hatty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D66C41F21B737F500715DA2 /* p5hatty.ttf */; };
+		3D80272021BC7ECE0028DAE6 /* SectionHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D80271F21BC7ECE0028DAE6 /* SectionHeaderViewController.swift */; };
+		3D80272321BC82DD0028DAE6 /* p5hatty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D66C41F21B737F500715DA2 /* p5hatty.ttf */; };
+		3D80272421BC82DD0028DAE6 /* personas.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D830D63206578EE005A5D2E /* personas.json */; };
+		3D80272521BC82DD0028DAE6 /* skills.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D01A76E209522640095C888 /* skills.json */; };
+		3D80272621BC82DD0028DAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D830D3C20657859005A5D2E /* Assets.xcassets */; };
+		3D80272721BC83560028DAE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D830D3920657859005A5D2E /* Main.storyboard */; };
+		3D80272821BC83560028DAE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D830D3E20657859005A5D2E /* LaunchScreen.storyboard */; };
 		3D830D3620657858005A5D2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D830D3520657858005A5D2E /* AppDelegate.swift */; };
 		3D830D3820657858005A5D2E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D830D3720657858005A5D2E /* TableViewController.swift */; };
-		3D830D3B20657859005A5D2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D830D3920657859005A5D2E /* Main.storyboard */; };
-		3D830D3D20657859005A5D2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D830D3C20657859005A5D2E /* Assets.xcassets */; };
-		3D830D4020657859005A5D2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D830D3E20657859005A5D2E /* LaunchScreen.storyboard */; };
 		3D830D4B2065785D005A5D2E /* Fusion_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D830D4A2065785C005A5D2E /* Fusion_CalculatorTests.swift */; };
 		3D830D562065785E005A5D2E /* Fusion_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D830D552065785E005A5D2E /* Fusion_CalculatorUITests.swift */; };
-		3D830D64206578EE005A5D2E /* personas.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D830D63206578EE005A5D2E /* personas.json */; };
 		3DA3967F2099826A00896A54 /* SortMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3967E2099826A00896A54 /* SortMenuController.swift */; };
 		3DB28E44209A1E6600B64846 /* SortFusionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB28E43209A1E6600B64846 /* SortFusionController.swift */; };
 		3DB6A0F6206BD9030074FD98 /* PersonaStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6A0F5206BD9020074FD98 /* PersonaStatsViewController.swift */; };
@@ -52,6 +53,7 @@
 		3D5664A42095AAD40010A3DE /* SkillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillDetailsViewController.swift; sourceTree = "<group>"; };
 		3D59C05520661327002975FE /* MyTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableCell.swift; sourceTree = "<group>"; };
 		3D66C41F21B737F500715DA2 /* p5hatty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = p5hatty.ttf; path = "Fusion Calculator/p5hatty.ttf"; sourceTree = SOURCE_ROOT; };
+		3D80271F21BC7ECE0028DAE6 /* SectionHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderViewController.swift; sourceTree = "<group>"; };
 		3D830D3220657858005A5D2E /* Fusion Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fusion Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D830D3520657858005A5D2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D830D3720657858005A5D2E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				3DF7E8B520969DA600E75635 /* ComboCell.swift */,
 				3DA3967E2099826A00896A54 /* SortMenuController.swift */,
 				3DB28E43209A1E6600B64846 /* SortFusionController.swift */,
+				3D80271F21BC7ECE0028DAE6 /* SectionHeaderViewController.swift */,
 			);
 			path = "Fusion Calculator";
 			sourceTree = "<group>";
@@ -294,12 +297,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D830D64206578EE005A5D2E /* personas.json in Resources */,
-				3D830D4020657859005A5D2E /* LaunchScreen.storyboard in Resources */,
-				3D01A76F209522650095C888 /* skills.json in Resources */,
-				3D66C42021B737F500715DA2 /* p5hatty.ttf in Resources */,
-				3D830D3D20657859005A5D2E /* Assets.xcassets in Resources */,
-				3D830D3B20657859005A5D2E /* Main.storyboard in Resources */,
+				3D80272721BC83560028DAE6 /* Main.storyboard in Resources */,
+				3D80272821BC83560028DAE6 /* LaunchScreen.storyboard in Resources */,
+				3D80272321BC82DD0028DAE6 /* p5hatty.ttf in Resources */,
+				3D80272421BC82DD0028DAE6 /* personas.json in Resources */,
+				3D80272521BC82DD0028DAE6 /* skills.json in Resources */,
+				3D80272621BC82DD0028DAE6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +377,7 @@
 				3DB28E44209A1E6600B64846 /* SortFusionController.swift in Sources */,
 				3DF7E8B420968D2A00E75635 /* Fusion Methods.swift in Sources */,
 				3D48650A206CBB1800BF1B95 /* PersonaFusionViewController.swift in Sources */,
+				3D80272021BC7ECE0028DAE6 /* SectionHeaderViewController.swift in Sources */,
 				3D59C05620661327002975FE /* MyTableCell.swift in Sources */,
 				3DF7E8B620969DA600E75635 /* ComboCell.swift in Sources */,
 				3D5664A52095AAD40010A3DE /* SkillDetailsViewController.swift in Sources */,

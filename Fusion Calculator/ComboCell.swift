@@ -10,19 +10,13 @@ import UIKit
 
 class ComboCell: UITableViewCell {
     
-    var firstPersona: Persona?
-    var firstName: String?
-    var secondPersona: Persona?
-    var secondName: String?
+    var persona: Persona?
+    var name: String?
     
     
-    @IBOutlet weak var firstArcanaLabel: UILabel!
-    @IBOutlet weak var secondArcanaLabel: UILabel!
-    @IBOutlet weak var firstLevelLabel: UILabel!
-    @IBOutlet weak var secondLevelLabel: UILabel!
-    @IBOutlet weak var firstNameLabel: UILabel!
-    @IBOutlet weak var secondNameLabel: UILabel!
-    @IBOutlet weak var costLabel: UILabel!
+    @IBOutlet weak var arcanaLabel: UILabel!
+    @IBOutlet weak var levelLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

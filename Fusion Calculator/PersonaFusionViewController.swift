@@ -49,25 +49,63 @@ class PersonaFusionViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return combos.count
+        //return combos.count
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "comboCell") as! ComboCell
-        let current = sortedTable[indexPath.row]
-            cell.firstArcanaLabel.text = current.key.personas.first!.value.arcana
-            cell.secondArcanaLabel.text = current.key.personas.reversed().first!.value.arcana
-            cell.firstLevelLabel.text = "\(current.key.personas.first!.value.level)"
-            cell.secondLevelLabel.text = "\(current.key.personas.reversed().first!.value.level)"
-            cell.firstNameLabel.text = current.key.personas.first!.key
-            cell.secondNameLabel.text = current.key.personas.reversed().first!.key
-            cell.costLabel.text = "\(current.value)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myProtoCell") as! MyTableCell
+        let overallIndex = 2*indexPath.section + indexPath.row
+        if (overallIndex % 2 == 0) {
+            let current = sortedTable[overallIndex]
+            if (current.key.personas.first!.value.arcana == "Hierophant") {
+                cell.arcanaLabel.text = "Hiero."
+            }
+            else if (current.key.personas.first!.value.arcana == "Hanged Man") {
+                cell.arcanaLabel.text = "Hanged"
+            }
+            else if (current.key.personas.first!.value.arcana == "Temperance") {
+                cell.arcanaLabel.text = "Temper."
+            }
+            else if (current.key.personas.first!.value.arcana == "Judgement") {
+                cell.arcanaLabel.text = "Judge."
+            }
+            else {
+                cell.arcanaLabel.text = current.key.personas.first!.value.arcana
+            }
+            cell.levelLabel.text = "\(current.key.personas.first!.value.level)"
+            cell.nameLabel.text = current.key.personas.first!.key
+            //cell.costLabel.text = "\(current.value)"
             //Should eventually have separate personas for first and second
-            cell.firstPersona = current.key.personas.first!.value
-            cell.firstName = current.key.personas.first!.key
-            cell.secondPersona = current.key.personas.reversed().first!.value
-            cell.secondName = current.key.personas.reversed().first!.key
+            cell.persona = current.key.personas.first!.value
+            cell.name = current.key.personas.first!.key
+        }
+        else {
+            let current = sortedTable[overallIndex - 1]
+            if (current.key.personas.reversed().first!.value.arcana == "Hierophant") {
+                cell.arcanaLabel.text = "Hiero."
+            }
+            else if (current.key.personas.reversed().first!.value.arcana == "Hanged Man") {
+                cell.arcanaLabel.text = "Hanged"
+            }
+            else if (current.key.personas.reversed().first!.value.arcana == "Temperance") {
+                cell.arcanaLabel.text = "Temper."
+            }
+            else if (current.key.personas.reversed().first!.value.arcana == "Judgement") {
+                cell.arcanaLabel.text = "Judge."
+            }
+            else {
+                cell.arcanaLabel.text = current.key.personas.reversed().first!.value.arcana
+            }
+            cell.levelLabel.text = "\(current.key.personas.reversed().first!.value.level)"
+            cell.nameLabel.text = current.key.personas.reversed().first!.key
+            //cell.costLabel.text = "\(current.value)"
+            //Should eventually have separate personas for first and second
+            cell.persona = current.key.personas.reversed().first!.value
+            cell.name = current.key.personas.reversed().first!.key
+        }
+        
         return cell
     }
     
@@ -77,14 +115,30 @@ class PersonaFusionViewController: UIViewController, UITableViewDelegate, UITabl
         self.performSegue(withIdentifier: "fusionPersonaSelection", sender: cell)
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let sectionHeader = tableView.dequeueReusableCell(withIdentifier: "sectionHeader") as! SectionHeaderViewController
+        let sectionIndex = 2*section
+        let current = sortedTable[sectionIndex]
+        sectionHeader.costLabel.text = "\(current.value)"
+        return sectionHeader
+    }
+    
+    /*func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Section"
+    }*/
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return combos.count/2
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let cell = sender as! ComboCell
-        let sendingFirstPersona = cell.firstPersona
-        let sendingFirstName = cell.firstName
+        let cell = sender as! MyTableCell
+        let sendingPersona = cell.persona
+        let sendingName = cell.name
         if segue.identifier == "fusionPersonaSelection" {
             if let myPageViewController = segue.destination as? MyPageViewController {
-                myPageViewController.receivedPersona = sendingFirstPersona
-                myPageViewController.receivedName = sendingFirstName
+                myPageViewController.receivedPersona = sendingPersona
+                myPageViewController.receivedName = sendingName
             }
         }
     }

@@ -27,7 +27,7 @@ class SortFusionController: UIViewController {
     func openMenu() {
         
         // when menu is opened, it's left constraint should be 0
-        constraintViewRight.constant = -100
+        constraintViewRight.constant = -120
         
         // view for dimming effect should also be shown
         //viewBlack.isHidden = false
